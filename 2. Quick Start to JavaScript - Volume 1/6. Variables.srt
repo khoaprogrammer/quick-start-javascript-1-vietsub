@@ -1,0 +1,404 @@
+1
+00:00:04,000 --> 00:00:10,000
+In this lesson we'll learn how to use variables to store information.
+
+2
+00:00:10,000 --> 00:00:13,000
+In our last lesson we ended in an exercise
+
+3
+00:00:13,000 --> 00:00:18,000
+to start to be able to try to guess or anticipate the type of an expression's result.
+
+4
+00:00:18,000 --> 00:00:22,000
+So I want to go over some of these answers and take a look at that.
+
+5
+00:00:22,000 --> 00:00:31,000
+We learned that the result of 300/2 was 150, and 150 is a number.
+
+6
+00:00:31,000 --> 00:00:36,000
+While that seems kind of obvious to us, it's not as obvious to our code.
+
+7
+00:00:36,000 --> 00:00:42,000
+It doesn't really understand what a number is that's actually defined for it in a certain way in the language
+
+8
+00:00:42,000 --> 00:00:48,000
+itself and JavaScript itself, so we have to be able to understand how JavaScript is thinking about each of
+
+9
+00:00:48,000 --> 00:00:57,000
+these things. So let's take a look at Hello + World. And if we press Display here we get the result.
+
+10
+00:00:57,000 --> 00:01:04,000
+We can see it's crammed together, but it's kind of hard to understand in the context of our Scratchpad what
+
+11
+00:01:04,000 --> 00:01:09,000
+the results will be here. So I want to take a look at our console so we can get a better idea.
+
+12
+00:01:09,000 --> 00:01:16,000
+So I'm going to bring up our developer tools and come over to our Console tab and then just enter exactly what
+
+13
+00:01:16,000 --> 00:01:24,000
+we entered in here. So we can see Hello + World, and we're going to ask it what the result is and it's going
+
+14
+00:01:24,000 --> 00:01:32,000
+to tell us that that's Helloworld. And now it's much easier to see that this is a string, that our result
+
+15
+00:01:32,000 --> 00:01:37,000
+is a string, so we see those little quotation marks and we don't see them over here.
+
+16
+00:01:37,000 --> 00:01:44,000
+And if you remember when we added two numbers together it returned a number, but if we add two things that are
+
+17
+00:01:44,000 --> 00:01:50,000
+not numbers together it concatenates them and returns it as a string.
+
+18
+00:01:50,000 --> 00:01:55,000
+So this is what we're seeing here. And JavaScript doesn't know that these are separate words, even though
+
+19
+00:01:55,000 --> 00:02:02,000
+these are readable to us, we have to remind ourselves constantly that we aren't reading this like text on a page
+
+20
+00:02:02,000 --> 00:02:07,000
+or something like that, it doesn't understand these are words. So it's just going to cram it together,
+
+21
+00:02:07,000 --> 00:02:12,000
+it's not going to know that there's a space in there. So if we wanted something like that we'd have to say
+
+22
+00:02:12,000 --> 00:02:21,000
+Hello and then add in that space ourselves, and then add in our World, and then we would get the result.
+
+23
+00:02:21,000 --> 00:02:27,000
+It would just read this as a string too and insert it. And although this looks very readable to us it's
+
+24
+00:02:27,000 --> 00:02:33,000
+actually just pushing it all together and we're actually getting three separate strings here concatenated.
+
+25
+00:02:33,000 --> 00:02:39,000
+So we have to constantly remind ourselves to think in a new way when we're writing that code.
+
+26
+00:02:39,000 --> 00:02:46,000
+So we have Hello World, it's returning a string. So how about 4 is less than 2?
+
+27
+00:02:46,000 --> 00:02:53,000
+So we type in 4 is less than 2 and you can see we get false, and if we remember back to our last lesson
+
+28
+00:02:53,000 --> 00:02:58,000
+false is a Boolean value, we have true and false, which are both Booleans.
+
+29
+00:02:58,000 --> 00:03:07,000
+So if we ask it what typeof 4 is less than 2 is, it's going to evaluate 4 is less than 2, it's going to
+
+30
+00:03:07,000 --> 00:03:11,000
+return false as we see here, and then it's going to ask what type of the result is.
+
+31
+00:03:11,000 --> 00:03:18,000
+What is the type of false? And then we get boolean return, so very, very interesting.
+
+32
+00:03:18,000 --> 00:03:24,000
+And continuing along we have a+b, which I want to do that last and there's a reason why, which we'll get to in
+
+33
+00:03:24,000 --> 00:03:34,000
+just a second, but 3 + 6, if we add this together, so 3 + 6, we have a number here and we have,
+
+34
+00:03:34,000 --> 00:03:40,000
+this looks like a number to us, but since we put it in quotation marks it's actually being treated as a string
+
+35
+00:03:40,000 --> 00:03:45,000
+so JavaScript treats it as a string. It doesn't know that that's a number since we didn't treat it that way.
+
+36
+00:03:45,000 --> 00:04:00,000
+And then we get it concatenated and returned as 36. So if we say, typeof 3+6, then we can see it returns a string.
+
+37
+00:04:00,000 --> 00:04:04,000
+So we have to remind ourselves also that it's going to concatenate those numbers and it's going to
+
+38
+00:04:04,000 --> 00:04:17,000
+return it as a string. So, how about a+b? If we say a + b, it's going to return an error and say a is not defined.
+
+39
+00:04:17,000 --> 00:04:29,000
+So this is actually a special type, if we say, typeof, let's say c this time, it's going to say that its type is undefined.
+
+40
+00:04:29,000 --> 00:04:35,000
+So this is another value type as well, which we started to learn about in our last lesson.
+
+41
+00:04:35,000 --> 00:04:42,000
+So how do we correct this error? What if we want to use c and have that mean something in our code?
+
+42
+00:04:42,000 --> 00:04:48,000
+We have to create what is called a variable, which is going to define things for JavaScript.
+
+43
+00:04:48,000 --> 00:04:54,000
+So it's no longer going to be undefined, it's going to have a definition in our code, and it's going to be
+
+44
+00:04:54,000 --> 00:04:58,000
+very helpful for other reasons as well. So let's go ahead and take a look at that.
+
+45
+00:04:58,000 --> 00:05:04,000
+I'm going to switch over here to our project file for this lesson, which is our index.html file in our
+
+46
+00:05:04,000 --> 00:05:11,000
+07_begin folder. And let's take a look, I'm going to pull up our console again so we can see any results
+
+47
+00:05:11,000 --> 00:05:18,000
+that are being spit out to our console here. And if you see this reflow, when I remove this it's just
+
+48
+00:05:18,000 --> 00:05:23,000
+telling us that our code is being recalculated, our CSS, we get that little reflow message.
+
+49
+00:05:23,000 --> 00:05:27,000
+So I'll clear that. I just wanted to point that out in case you were wondering what that is.
+
+50
+00:05:27,000 --> 00:05:36,000
+Let's say we want to define for JavaScript so we no longer get undefined, we need to use the variable keyword,
+
+51
+00:05:36,000 --> 00:05:41,000
+which is var for short. So we just say var, oops and make sure you don't have your caps lock turned on like
+
+52
+00:05:41,000 --> 00:05:45,000
+I did, so we say var, and then we need to give our variable a name.
+
+53
+00:05:45,000 --> 00:05:53,000
+So if we want to name it something like a, we can name it a, and then we need to set an equal sign so we're
+
+54
+00:05:53,000 --> 00:05:59,000
+telling it what it is. We're saying var, we have our variable, we're going to call it a, and then we're going
+
+55
+00:05:59,000 --> 00:06:06,000
+to define it using the equals sign. So let's say we want a to equal 2, for example.
+
+56
+00:06:06,000 --> 00:06:15,000
+Then now if we run our code and we ask what type of a is, maybe take a second and guess.
+
+57
+00:06:15,000 --> 00:06:20,000
+What do you think it's going to return? What is it going to tell us?
+
+58
+00:06:20,000 --> 00:06:28,000
+Well if we press Enter you can see it's returning a number. So since we said a is 2, now it's reading when it
+
+59
+00:06:28,000 --> 00:06:34,000
+sees a it's going to point to this value, it's going to say well, a is 2 and 2 is a number, so it's going to
+
+60
+00:06:34,000 --> 00:06:41,000
+return a number. So now we don't any longer get that undefined.
+
+61
+00:06:41,000 --> 00:06:49,000
+If we say var b, and we want this to be something else, then now we can use these variables anywhere we want to
+
+62
+00:06:49,000 --> 00:06:56,000
+refer to that value. So if we run this. So we define our variables, we're saying these exists, and now we can
+
+63
+00:06:56,000 --> 00:07:09,000
+say a + b, maybe we want to say a + b, if I can type that in, it's going to return 6, which is 2 + 4.
+
+64
+00:07:09,000 --> 00:07:18,000
+So, now we no longer get that error. We can say typeof a + b and we get a number as well.
+
+65
+00:07:18,000 --> 00:07:26,000
+So now we're saying it exists. It's no longer undefined. So that's why we got that error, it's saying it expected
+
+66
+00:07:26,000 --> 00:07:31,000
+a variable, but since we hadn't defined it for JavaScript it was telling us it doesn't know what we mean;
+
+67
+00:07:31,000 --> 00:07:40,000
+therefore, it's undefined, so very, very interesting. And we aren't just limited to numbers here, we can store
+
+68
+00:07:40,000 --> 00:07:46,000
+all kinds of information in the form of a variable. So, let's say we want to store something like a string,
+
+69
+00:07:46,000 --> 00:07:52,000
+we can do that as well. So we just need to use our variable keyword and we can give it a name.
+
+70
+00:07:52,000 --> 00:08:00,000
+So let's say we want to say my name, I could say my and then Name, which I'm using CAML case here because we can't
+
+71
+00:08:00,000 --> 00:08:07,000
+use spaces in variables names. It's going to treat these as two separate things so we can't have a space in
+
+72
+00:08:07,000 --> 00:08:15,000
+our name, and we want to set it equal to the value we want our variable to mean or what we want that definition
+
+73
+00:08:15,000 --> 00:08:22,000
+to be, and say I just want to put my name in here, I'm going to say Susan and then I can run my code,
+
+74
+00:08:22,000 --> 00:08:30,000
+which will run our code. And then I can say myName or I can type it in my console, and now it's going to return
+
+75
+00:08:30,000 --> 00:08:37,000
+Susan when we say myName, so that's really, really cool. If we wanted to use this with a command like we did
+
+76
+00:08:37,000 --> 00:08:47,000
+before we can say alert myName, and then if we run this, you got it, you can see it's going to say not myName,
+
+77
+00:08:47,000 --> 00:08:53,000
+but Susan because now we've defined it to mean our name, so it's really, really cool and this is a very,
+
+78
+00:08:53,000 --> 00:09:00,000
+very powerful essential building block of JavaScript in addition to understanding types as well.
+
+79
+00:09:00,000 --> 00:09:02,000
+So just to take a look at this,
+
+80
+00:09:02,000 --> 00:09:07,000
+a little review. We have a variable, this is a syntax, which we just saw.
+
+81
+00:09:07,000 --> 00:09:14,000
+So let's say we wanted to create a variable called catNoise and we want it to mean a string of meow.
+
+82
+00:09:14,000 --> 00:09:20,000
+Well, we have our special keyword, var, that indicates we're creating a variable.
+
+83
+00:09:20,000 --> 00:09:27,000
+It triggers or tells JavaScript that anything after this it's going to expect a name.
+
+84
+00:09:27,000 --> 00:09:33,000
+So we give it a name and then we set our name to whatever we want our value to be.
+
+85
+00:09:33,000 --> 00:09:41,000
+It can be a string, it can be a number, it can be a Boolean value, and we can even make it more complicated and
+
+86
+00:09:41,000 --> 00:09:50,000
+set it to an expression. So if we want our catNoise to equal 2 + 4 or something like that, which doesn't really
+
+87
+00:09:50,000 --> 00:09:54,000
+make sense, but we can set it to many things, this is very, very flexible.
+
+88
+00:09:54,000 --> 00:10:02,000
+But we do have some naming rules for our variables. We can't start with a number, we can't have spaces like
+
+89
+00:10:02,000 --> 00:10:09,000
+we saw before, which is why I was using CAML case for the name or meaning, the second word in that name I
+
+90
+00:10:09,000 --> 00:10:16,000
+just capitalized to show that separation between those multiple words, and we can't use reserve words or keywords.
+
+91
+00:10:16,000 --> 00:10:24,000
+So, examples of those are break, case, catch, continue debugger, there's a whole list you can see.
+
+92
+00:10:24,000 --> 00:10:30,000
+We have var, since that means a variable we can't use that. We can't use typeof since that already is defined,
+
+93
+00:10:30,000 --> 00:10:36,000
+it already means something different in JavaScript and you can confuse it, so we have to watch out and not use
+
+94
+00:10:36,000 --> 00:10:43,000
+any of these things that already mean other things as well. Beyond that, we want no punctuation except for
+
+95
+00:10:43,000 --> 00:10:50,000
+an underscore or a dollar sign, and as a last kind of unspoken rule we want our name to mean something,
+
+96
+00:10:50,000 --> 00:10:57,000
+we want it to stand for something to us. So for example, myName means something to us, it's human readable,
+
+97
+00:10:57,000 --> 00:11:05,000
+it's concise, and if we came back a couple of months after writing our code we would still remember what that means.
+
+98
+00:11:05,000 --> 00:11:09,000
+And if someone else was reusing our code or adding to it,
+
+99
+00:11:09,000 --> 00:11:17,000
+chances are they would understand what it means as well. So, that's just a brief introduction to our variable.
+
+100
+00:11:17,000 --> 00:11:23,000
+So, in our next lesson I want to continue using variables and see what other kinds of things
+
+101
+00:11:23,000 --> 00:59:00,000
+we can use them to accomplish in our code.
+

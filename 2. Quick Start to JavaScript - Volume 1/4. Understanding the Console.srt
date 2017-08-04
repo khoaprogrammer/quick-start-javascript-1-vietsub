@@ -1,0 +1,304 @@
+1
+00:00:03,000 --> 00:00:12,000
+In this lesson we'll learn about the web console and how we can use it to view important information about JavaScript.
+
+2
+00:00:12,000 --> 00:00:15,000
+For this lesson you'll just want to make sure you open our
+
+3
+00:00:15,000 --> 00:00:22,000
+index.html file from the 05_begin folder and then open up our Scratchpad from the web development tools just
+
+4
+00:00:22,000 --> 00:00:29,000
+like we have in our last couple of lessons. And if you remember from our last lesson I mentioned that there's
+
+5
+00:00:29,000 --> 00:00:38,000
+a different way to display the result of the code we're running other than clicking Display and viewing it as a comment.
+
+6
+00:00:38,000 --> 00:00:45,000
+So just as a refresher, if you remember in our last lesson we learned how to run or use JavaScript to
+
+7
+00:00:45,000 --> 00:00:55,000
+calculate the results of an expression or a mathematical expression for us, and if we say like 2 + 2 and add
+
+8
+00:00:55,000 --> 00:01:04,000
+our semicolon we could press Display and get the results in a comment, so 2 + 2 returns 4, but there's actually
+
+9
+00:01:04,000 --> 00:01:13,000
+a much more common way to view the results of a statement or an expression like we see here, so I want to
+
+10
+00:01:13,000 --> 00:01:21,000
+take a look at that. And the way we can do that is we're going to be logging information to something called the console.
+
+11
+00:01:21,000 --> 00:01:30,000
+So what we can do here is we can say console, which is going to target that console, and we'll say .log,
+
+12
+00:01:30,000 --> 00:01:37,000
+so we're telling the console to log some information, and then we need to add that information inside some parentheses.
+
+13
+00:01:37,000 --> 00:01:44,000
+So just like with our alert, our prompt, our confirm, we are giving a command and then putting it inside some
+
+14
+00:01:44,000 --> 00:01:50,000
+parentheses and then we'll finish with our semicolon. The main difference here is now we're telling
+
+15
+00:01:50,000 --> 00:01:58,000
+something specific what command we want it to do. So we're saying console log some information.
+
+16
+00:01:58,000 --> 00:02:05,000
+So inside of these parentheses we'll say something like we did before, we can say Hello World, some exclamation
+
+17
+00:02:05,000 --> 00:02:11,000
+points, and then the last thing we want to do is click Run. And you can see nothing is happening is here,
+
+18
+00:02:11,000 --> 00:02:17,000
+and that's at least nothing visual is happening, but we need to look at a certain place to view the
+
+19
+00:02:17,000 --> 00:02:25,000
+information we're logging, and that's in the console, the thing we're telling to display this little message.
+
+20
+00:02:25,000 --> 00:02:33,000
+So the way we get there is in our developer tools. So we can right-click and choose to Inspect Element,
+
+21
+00:02:33,000 --> 00:02:37,000
+and then in our web developer tools, I'm going to shrink this window so we can see all of our tabs here a
+
+22
+00:02:37,000 --> 00:02:44,000
+little bit better, you can see that there is a tab that's called Console.
+
+23
+00:02:44,000 --> 00:02:49,000
+So this is where we need to go to view that information. So I'm going to click on this, you can see if we
+
+24
+00:02:49,000 --> 00:02:56,000
+hover over it we get a tooltip telling us we're going to view our web console, and there you go.
+
+25
+00:02:56,000 --> 00:03:04,000
+You can see our message here. It's echoing out the content we put inside of that command, Hello World!!
+
+26
+00:03:04,000 --> 00:03:10,000
+And we also get some additional important information here that when we return a result like this or we have
+
+27
+00:03:10,000 --> 00:03:19,000
+information that's logged into our console it's going to tell us what line that occurred on, so if we have
+
+28
+00:03:19,000 --> 00:03:26,000
+tons of code we can go and see exactly where we're seeing the results of that command or that code.
+
+29
+00:03:26,000 --> 00:03:33,000
+So right here you can see we are viewing on line 14, so it's the last bit of information after that colon.
+
+30
+00:03:33,000 --> 00:03:39,000
+And if you look over here in our Scratchpad you can see we entered that command on line 14 as well.
+
+31
+00:03:39,000 --> 00:03:46,000
+When we have code that's this simple it's not that helpful because we remember where we entered it, but if we're
+
+32
+00:03:46,000 --> 00:03:52,000
+getting an error or a warning or something like that, it's going to display in our console as well and that will
+
+33
+00:03:52,000 --> 00:03:59,000
+be incredibly important especially when we have hundreds of lines of code or code we haven't written in a long
+
+34
+00:03:59,000 --> 00:04:06,000
+time and we're coming back to it to do what is called debugging or solving issues or errors in our code,
+
+35
+00:04:06,000 --> 00:04:13,000
+then that's going to be really, really, really helpful. So, just like I mentioned before we can see other kinds of
+
+36
+00:04:13,000 --> 00:04:20,000
+information here. You can see we have information from the network, from CSS, JavaScript, security, etc.,
+
+37
+00:04:20,000 --> 00:04:26,000
+so there's all kinds of additional important information here as well that's unrelated to JavaScript.
+
+38
+00:04:26,000 --> 00:04:32,000
+So this is going to be one of our best friends when we're writing software or programs for the web,
+
+39
+00:04:32,000 --> 00:04:39,000
+it's going to know where to look for information. So let's take a look at what a warning might look like.
+
+40
+00:04:39,000 --> 00:04:48,000
+So over here we can put out a warning, and while this isn't a real warning it will kind of emulate one so we
+
+41
+00:04:48,000 --> 00:04:52,000
+can get a good idea of what that might look like when we see one in our code.
+
+42
+00:04:52,000 --> 00:04:57,000
+So we can use a similar command here. We're going to target the console and then we're going to say,
+
+43
+00:04:57,000 --> 00:05:04,000
+console.warn, so we're going to echo out a warning here, and then just like before in our parentheses we'll put
+
+44
+00:05:04,000 --> 00:05:12,000
+our warning. So we can say, Warning!!!, and then add our semicolon and then as we run this you can see that
+
+45
+00:05:12,000 --> 00:05:19,000
+we have now a warning being echoed out. Normally it would be something more specific about what kind of warning
+
+46
+00:05:19,000 --> 00:05:24,000
+we're getting, right now it's just putting whatever we entered into here.
+
+47
+00:05:24,000 --> 00:05:30,000
+And you can see that it's different from information that's just logged to the console with console.log.
+
+48
+00:05:30,000 --> 00:05:36,000
+We have a little triangle with an exclamation point here saying that this is a warning, you need to watch out for
+
+49
+00:05:36,000 --> 00:05:43,000
+whatever it is that we're doing, and then you can see what line the warning occurred on.
+
+50
+00:05:43,000 --> 00:05:50,000
+And more serious than a warning is an actual error, something that is going to cause a serious issue in
+
+51
+00:05:50,000 --> 00:05:56,000
+our code, so we can kind of take a look at that as well. And that's just console.error, and then in quotation
+
+52
+00:05:56,000 --> 00:06:05,000
+marks we can say Error!!!, add our semicolon and run this, and we can see what an error might look like as well.
+
+53
+00:06:05,000 --> 00:06:11,000
+You can see that it's in red so our eye is going to be immediately drawn to this, it looks kind of scary,
+
+54
+00:06:11,000 --> 00:06:18,000
+and we have an X as well. In addition to that if we drop this down we're going to get some additional
+
+55
+00:06:18,000 --> 00:06:24,000
+information about the nature of our error and then once again the line it occurred on.
+
+56
+00:06:24,000 --> 00:06:30,000
+And don't worry about what these errors are saying right now, it's a little anonymous, it will make more sense
+
+57
+00:06:30,000 --> 00:06:36,000
+as you learn more about JavaScript more as you go along. The most important thing right now is to recognize
+
+58
+00:06:36,000 --> 00:06:42,000
+the difference between these and what they look like. So, how is this helpful you might be asking yourself,
+
+59
+00:06:42,000 --> 00:06:48,000
+if we're giving our own warnings, we're creating our own errors right now?
+
+60
+00:06:48,000 --> 00:06:56,000
+And one of the most important parts of this is that we can interact with our code as it's already running on our page.
+
+61
+00:06:56,000 --> 00:07:03,000
+So we can get different messages, different information about our code as our page is live rather than writing it,
+
+62
+00:07:03,000 --> 00:07:11,000
+and then running it, and then seeing the error. So, we can type in things just like we do in our Scratchpad in
+
+63
+00:07:11,000 --> 00:07:21,000
+the console. So if we wanted to say console.log, we can put in the exact same thing, Hello World!, and then
+
+64
+00:07:21,000 --> 00:07:28,000
+we can just press Enter to run that code and you can see we have what we typed in, Hello World, we have a
+
+65
+00:07:28,000 --> 00:07:33,000
+little message that says undefined, which we'll learn what that means later, and then we have the
+
+66
+00:07:33,000 --> 00:07:41,000
+actual information logged to our console. The main difference between adding this in our console and in our
+
+67
+00:07:41,000 --> 00:07:47,000
+Scratchpad is that our code is already running here on our page as we're typing it in here, and we're also
+
+68
+00:07:47,000 --> 00:07:57,000
+limited to typing it line by line, unlike in our Scratchpad where we can write an entire file or as many
+
+69
+00:07:57,000 --> 00:08:03,000
+lines of code as we need to get what we want to do done. So, it's an important difference there as well.
+
+70
+00:08:03,000 --> 00:08:09,000
+If we need just a little line or two here and we don't need to save it we can put it in here, otherwise,
+
+71
+00:08:09,000 --> 00:08:18,000
+we need to add it in a file or write it in our Scratchpad. So, this is one of the most important concepts to
+
+72
+00:08:18,000 --> 00:08:24,000
+understanding it and get a grasp of because as you get more advanced, as you get more familiar, it's going to be
+
+73
+00:08:24,000 --> 00:08:31,000
+an essential tool to help you find errors in your code. So console.log, chances are you're going to be using this
+
+74
+00:08:31,000 --> 00:08:37,000
+a ton throughout your JavaScript career. So now that we've taken a look at the console and learned about what
+
+75
+00:08:37,000 --> 00:08:44,000
+it can help us do, in our next lesson we're going to continue on learning more about JavaScript and talk about
+
+76
+00:08:44,000 --> 00:59:00,000
+different types of data that JavaScript recognizes.
+

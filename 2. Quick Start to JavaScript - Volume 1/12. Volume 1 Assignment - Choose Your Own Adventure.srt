@@ -1,0 +1,36 @@
+1
+00:00:03,000 --> 00:00:12,000
+In this lesson we'll get our volume 1 assignment so we can apply the skills we've learned so far in this course.
+
+2
+00:00:12,000 --> 00:00:15,000
+In our last lesson we applied everything we've learned so far in this
+
+3
+00:00:15,000 --> 00:00:22,000
+course to build our own zombie text adventure game. So for your volume 1 assignment I challenge you to not only
+
+4
+00:00:22,000 --> 00:00:30,000
+create an adventure game of your own, but to have fun doing so, and to practice using all of the little pieces
+
+5
+00:00:30,000 --> 00:00:35,000
+of code we've learned how to use, which I've just created this little list to remind you of the different things
+
+6
+00:00:35,000 --> 00:00:41,000
+we've used throughout this course. It's essential to keep on practicing because we really have to retrain
+
+7
+00:00:41,000 --> 00:00:46,000
+our brain to think in a new way when we learn something like JavaScript.
+
+8
+00:00:46,000 --> 00:00:52,000
+So keep up the good work and have fun creating a game of your own using everything we've learned so far.
+
+9
+00:00:52,000 --> 00:59:00,000
+I hope you've enjoyed Quick Start to JavaScript, Volume 1, and I'll see you around for Volume 2.
+

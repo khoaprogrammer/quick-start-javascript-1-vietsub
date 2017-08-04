@@ -1,0 +1,316 @@
+1
+00:00:03,000 --> 00:00:11,000
+In this lesson we'll learn about primitive data types or the basic building blocks of JavaScript.
+
+2
+00:00:11,000 --> 00:00:13,000
+Up until this point we've used
+
+3
+00:00:13,000 --> 00:00:18,000
+two different types of data with our JavaScript or two types of things.
+
+4
+00:00:18,000 --> 00:00:25,000
+So let's take a look at what we've learned so far. When we learned in our last lesson that we can log things
+
+5
+00:00:25,000 --> 00:00:35,000
+to the console, we use the console.log command and we put a value inside of these parentheses or something we
+
+6
+00:00:35,000 --> 00:00:43,000
+want to echo out in the console. And you can see right here it's expecting us to input a string.
+
+7
+00:00:43,000 --> 00:00:52,000
+So a string, as I mentioned before, is a string of characters or a sequence of characters inside of quotation marks.
+
+8
+00:00:52,000 --> 00:01:02,000
+And we can type anything in here we want, it doesn't matter, it's all going to be treated like a string.
+
+9
+00:01:02,000 --> 00:01:09,000
+So, we also learned how to use JavaScript to calculate math for us.
+
+10
+00:01:09,000 --> 00:01:17,000
+So we could say 2 + 2, we can display the result, and we can see that it's 4.
+
+11
+00:01:17,000 --> 00:01:27,000
+So, why is it important to understand that this is a string and these right here are numbers, that might be obvious,
+
+12
+00:01:27,000 --> 00:01:34,000
+yes these are two very different things, but what's most important about understanding this is that JavaScript
+
+13
+00:01:34,000 --> 00:01:42,000
+treats different types of data differently. So to take a look at this we can see 2 + 2 is equal to 4,
+
+14
+00:01:42,000 --> 00:01:53,000
+but what if we add 2 different things that are not numbers? So, let's say 2 +, and then I put the 2 in parentheses,
+
+15
+00:01:53,000 --> 00:01:59,000
+we now know that this is a string, anything inside those quotation marks is going to be treated like a string.
+
+16
+00:01:59,000 --> 00:02:07,000
+So what is the results of this expression or this statement, what answer are we going to get?
+
+17
+00:02:07,000 --> 00:02:10,000
+Well, let's go ahead and take a look, I'm going to press Display.
+
+18
+00:02:10,000 --> 00:02:17,000
+And you can see we get 22 returned as our result and not 4, so huh?
+
+19
+00:02:17,000 --> 00:02:25,000
+That's kind of weird, and what's happening here is when we have 2 different value types here, when we have 2
+
+20
+00:02:25,000 --> 00:02:33,000
+different types of information we can add them together, but our result is actually 22, and what this is called
+
+21
+00:02:33,000 --> 00:02:40,000
+is concatenation. So this is where it's incredibly important to understand the difference between two
+
+22
+00:02:40,000 --> 00:02:44,000
+different data types because JavaScript treats them differently.
+
+23
+00:02:44,000 --> 00:02:48,000
+So here when we have two numbers it's going to add them together.
+
+24
+00:02:48,000 --> 00:02:54,000
+When we have two different data types, when we have a number and a string, it's going to concatenate them or
+
+25
+00:02:54,000 --> 00:03:00,000
+just kind of push them together into a result, which is also a string.
+
+26
+00:03:00,000 --> 00:03:07,000
+So, what it's actually putting out is like this, it's just saying 22 is the result of that.
+
+27
+00:03:07,000 --> 00:03:18,000
+And for example, if we add two different words or strings together, let's say we have Hello + World,
+
+28
+00:03:18,000 --> 00:03:27,000
+so we have one string we're adding to another string, take a second and kind of guess what the answer of this might be.
+
+29
+00:03:27,000 --> 00:03:35,000
+So if we press Display, you can see we're getting a string returned as a result as well and it's just concatenating
+
+30
+00:03:35,000 --> 00:03:44,000
+those strings, or it's pushing them together. If you notice here it doesn't add a space between our two words
+
+31
+00:03:44,000 --> 00:03:49,000
+here because JavaScript doesn't know that those are words, they're supposed to be separate.
+
+32
+00:03:49,000 --> 00:03:55,000
+It can't read our mind so we have to kind of anticipate these types of results as well.
+
+33
+00:03:55,000 --> 00:04:04,000
+So if we want to have a space in there we have to say, Hello, and then add or concatenate a space,
+
+34
+00:04:04,000 --> 00:04:12,000
+so inside of this string we need just a space, and then we can add again and we can say World.
+
+35
+00:04:12,000 --> 00:04:18,000
+And now when we display the results we get all of this concatenated so it'll push it together,
+
+36
+00:04:18,000 --> 00:04:25,000
+this Hello, plus, the space, plus the World, and then the result is something more like what we expect to see,
+
+37
+00:04:25,000 --> 00:04:32,000
+or more like we recognize as we can see below, but really it's just a concatenation of all of these things.
+
+38
+00:04:32,000 --> 00:04:40,000
+So, this can be incredibly important if we accidently have a number that is being treated as a string,
+
+39
+00:04:40,000 --> 00:04:46,000
+if it's being converted somewhere in our code we might get something like 22 instead of 4, which you can see
+
+40
+00:04:46,000 --> 00:04:53,000
+is much, much different so we have to be understanding of how these are treated and be able to watch out for
+
+41
+00:04:53,000 --> 00:05:01,000
+that kind of result when we have something kind of strange going on that might be what's happening.
+
+42
+00:05:01,000 --> 00:05:10,000
+So, we have other types of values or data types as well. So we have numbers, we have strings, and we also have
+
+43
+00:05:10,000 --> 00:05:16,000
+other things that can be outputted, other kinds of values. So, let's take a look at that.
+
+44
+00:05:16,000 --> 00:05:25,000
+Let's say we have 10 is greater than 2. So let's go ahead and display the results of 10 is greater than 2.
+
+45
+00:05:25,000 --> 00:05:34,000
+We know that this isn't going to return an answer like obviously 2 + 2 is going to return 4, so what happens here?
+
+46
+00:05:34,000 --> 00:05:43,000
+I'm going to press Display and you can see that we get true as an answer, so it's saying yes, 10 is greater than 2.
+
+47
+00:05:43,000 --> 00:05:52,000
+So if we say that 10 is less than 2, if you take a second and try to guess the result, you can see that just
+
+48
+00:05:52,000 --> 00:05:59,000
+like we expect it's going to tell us no that's false, 10 is not less than 2.
+
+49
+00:05:59,000 --> 00:06:05,000
+So, this is different. We have true and false, different type of data than a string or a number.
+
+50
+00:06:05,000 --> 00:06:10,000
+So what kind of data is this? Well, we can actually ask JavaScript, which is really cool.
+
+51
+00:06:10,000 --> 00:06:19,000
+We could use the typeof command. So we could say, typeof, and then we can add in parentheses what we want to
+
+52
+00:06:19,000 --> 00:06:29,000
+know the type of. So we can say 10 is less than 2, give me the answer of that, what type of value is being returned?
+
+53
+00:06:29,000 --> 00:06:33,000
+And now when we display this we can see it's returning boolean.
+
+54
+00:06:33,000 --> 00:06:40,000
+So, true and false are called Boolean data types. You can see I've created a list here to kind of serve as a
+
+55
+00:06:40,000 --> 00:06:46,000
+reference and kind of help reinforce this because this is a lot to take in at once and I realize that.
+
+56
+00:06:46,000 --> 00:06:52,000
+So it's really important to take your time in understanding this.
+
+57
+00:06:52,000 --> 00:06:59,000
+This will start to make more sense as we go along so don't stress out if you don't understand all of this right away.
+
+58
+00:06:59,000 --> 00:07:05,000
+It's more important to be aware of this concept that there are different data types in JavaScript because we
+
+59
+00:07:05,000 --> 00:07:09,000
+are going to use these as the basic building blocks of our program.
+
+60
+00:07:09,000 --> 00:07:17,000
+We have Boolean values, these are incredibly useful, we can check to see whether something's true or false
+
+61
+00:07:17,000 --> 00:07:24,000
+and then write our code based on the response. And usually this won't be such a simple example like it is
+
+62
+00:07:24,000 --> 00:07:32,000
+with numbers. So I'm going to go ahead and delete these. We have a couple of other data types as well.
+
+63
+00:07:32,000 --> 00:07:41,000
+And these data types are kind of strange. You can see right here we have two others called Null and Undefined.
+
+64
+00:07:41,000 --> 00:07:52,000
+So, we'll get a better idea of what these are as we go along, but just real quickly, Null means a value does not exist.
+
+65
+00:07:52,000 --> 00:08:00,000
+So if we ask JavaScript something that doesn't have a value, it's going to say that value is Null,
+
+66
+00:08:00,000 --> 00:08:07,000
+and if we ask JavaScript something that hasn't been defined to it, if it doesn't understand it, it's going to
+
+67
+00:08:07,000 --> 00:08:13,000
+return Undefined. So I know those concepts are kind of confusing at first, but it'll start to make more sense,
+
+68
+00:08:13,000 --> 00:08:21,000
+especially in a couple of lessons when we start to use something called variables in JavaScript.
+
+69
+00:08:21,000 --> 00:08:29,000
+So to get some more practice about data types, let's play a game here.
+
+70
+00:08:29,000 --> 00:08:37,000
+This is in game.html and we'll just work through the first one together and then you can do the rest on your own
+
+71
+00:08:37,000 --> 00:08:43,000
+between lessons or come back later because this is incredibly important to be able to anticipate what type
+
+72
+00:08:43,000 --> 00:08:59,000
+each expression's result is going to return. So if we say 300 / 2, we can see it returns a value, which is 150.
+
+73
+00:08:59,000 --> 00:09:04,000
+So if we take a guess at what type this result is, it's a number.
+
+74
+00:09:04,000 --> 00:09:14,000
+And to try and check our answer we can say, typeof 300/2, and then just display the result.
+
+75
+00:09:14,000 --> 00:09:21,000
+We can check to see if we were correct as it will tell us what that answer is.
+
+76
+00:09:21,000 --> 00:09:31,000
+So, kind of take some time and practice between learning these types here in our little game and then join me
+
+77
+00:09:31,000 --> 00:09:39,000
+back in my next lesson and we'll go over the answers here and we'll also talk about something incredibly
+
+78
+00:09:39,000 --> 00:09:43,000
+important, which will help us start to actually do things with our
+
+79
+00:09:43,000 --> 00:59:00,000
+code when we learn about variables.
+

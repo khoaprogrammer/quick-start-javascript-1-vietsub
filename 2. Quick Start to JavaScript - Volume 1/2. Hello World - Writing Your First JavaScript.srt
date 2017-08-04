@@ -1,0 +1,360 @@
+1
+00:00:03,000 --> 00:00:08,000
+In this lesson, we'll learn how to write our first JavaScript.
+
+2
+00:00:08,000 --> 00:00:13,000
+Before we get started by writing our first JavaScript, we need a good web browser because we're going to be
+
+3
+00:00:13,000 --> 00:00:19,000
+writing our JavaScript directly in the browser. And we're going to be using Mozilla Firefox so if you don't
+
+4
+00:00:19,000 --> 00:00:24,000
+have that installed you'll want to go ahead and download that and install it.
+
+5
+00:00:24,000 --> 00:00:30,000
+Now, the next thing we want to do is we want to open a file in the browser so we have something to run our
+
+6
+00:00:30,000 --> 00:00:38,000
+JavaScript on, and that needs to be an HTML file. So in our project files, you can see we have just our 03_begin
+
+7
+00:00:38,000 --> 00:00:44,000
+folder and we want to open this index.html file in our Firefox web browser.
+
+8
+00:00:44,000 --> 00:00:51,000
+So I'm going to go ahead and double-click on this and it's going to pull open our JavaScript page here.
+
+9
+00:00:51,000 --> 00:00:58,000
+And you can see we just have a pretty bare bones document. We have a heading here, this is an h1 heading,
+
+10
+00:00:58,000 --> 00:01:05,000
+and then some basic CSS, which just changes our background color and the color of our text, and also our font
+
+11
+00:01:05,000 --> 00:01:14,000
+as well, so just a very bare bone project page here and we're going to be writing JavaScript on top of this.
+
+12
+00:01:14,000 --> 00:01:18,000
+What we're going to be using to write JavaScript is the developer tools of Firefox.
+
+13
+00:01:18,000 --> 00:01:27,000
+So we can right-click, come down here to Inspect Element, and it's going to pull up Firefox's developer tools.
+
+14
+00:01:27,000 --> 00:01:32,000
+If you have a light background and you want to change it, you can see mine's dark, the only difference I have
+
+15
+00:01:32,000 --> 00:01:38,000
+here is that I'm using a different theme. So if we come over here on the right side and click on this gear icon,
+
+16
+00:01:38,000 --> 00:01:45,000
+then you can come here to our DevTools theme and switch from the light theme, which is what you see by
+
+17
+00:01:45,000 --> 00:01:51,000
+default, to the dark theme if you want it to look like mine. The last thing we need to do in here is come
+
+18
+00:01:51,000 --> 00:01:58,000
+down here and scroll to where it says Available Toolbox Buttons and make sure our Scratchpad button is turned
+
+19
+00:01:58,000 --> 00:02:04,000
+on because this is going to allow us to create a sketchpad or scratchpad that allows us to write little
+
+20
+00:02:04,000 --> 00:02:11,000
+JavaScript files here and apply them directly to our page without having to use an external program.
+
+21
+00:02:11,000 --> 00:02:16,000
+We can write JavaScript directly in its native environment, which is the browser.
+
+22
+00:02:16,000 --> 00:02:21,000
+So I'm going to go ahead and click on this little Scratchpad button, it's going to open up our little JavaScript
+
+23
+00:02:21,000 --> 00:02:29,000
+Scratchpad so we can write it directly here and then we can see it in the browser on the left.
+
+24
+00:02:29,000 --> 00:02:35,000
+So I'm going to close our developer tools because we have our Scratchpad open, and now we're ready to go.
+
+25
+00:02:35,000 --> 00:02:41,000
+Before we start writing this, I also want to save our file so we don't lose any of our progress on accident.
+
+26
+00:02:41,000 --> 00:02:48,000
+So I'm going to come up here and save our Scratchpad as a JavaScript file.
+
+27
+00:02:48,000 --> 00:02:52,000
+So we're in our 03_begin folder and I already created two folders here.
+
+28
+00:02:52,000 --> 00:02:58,000
+We want to always make sure we're organizing our files, so our CSS is in the styles folder, all our styles
+
+29
+00:02:58,000 --> 00:03:04,000
+sheets in a styles folder, and so all of our JavaScript is going to be in a scripts folder.
+
+30
+00:03:04,000 --> 00:03:10,000
+So I'm going to double-click on this and then we can name it whatever we want as long as it follows that file
+
+31
+00:03:10,000 --> 00:03:18,000
+naming convention for the web. We can't have spaces or crazy characters, we're basically limited to hyphens
+
+32
+00:03:18,000 --> 00:03:25,000
+and underscores, or CAML case to separate any words. We're just going to call this main.js and I'm going to
+
+33
+00:03:25,000 --> 00:03:34,000
+hit Enter to save. Now, one thing we want to note before getting started with JavaScript is that the code you
+
+34
+00:03:34,000 --> 00:03:40,000
+write at first is going to be terrible, and this is completely fine, and I mean that in the best way possible,
+
+35
+00:03:40,000 --> 00:03:46,000
+and that's only because we can't write good code until we know what that means to actually write good code.
+
+36
+00:03:46,000 --> 00:03:54,000
+So the most important thing is that you get practice and learn after writing things why there might be a better
+
+37
+00:03:54,000 --> 00:04:01,000
+way and eventually get to the point where you can write awesome code, we just never start out that way.
+
+38
+00:04:01,000 --> 00:04:07,000
+So what we're doing here with JavaScript is we're going to be telling the client, or the browser, what we want it
+
+39
+00:04:07,000 --> 00:04:13,000
+to do using a language that it understands. So all we need to do to talk to our browser here is learn that
+
+40
+00:04:13,000 --> 00:04:19,000
+language, which is JavaScript. So, let's start by entering a command here, which is going to communicate with
+
+41
+00:04:19,000 --> 00:04:27,000
+our browser. So I'm going to type alert, which is going to alert the browser of something.
+
+42
+00:04:27,000 --> 00:04:32,000
+And then directly after our alert we need some parentheses, so it's going to open and close those
+
+43
+00:04:32,000 --> 00:04:40,000
+parentheses for us. And inside of this we need to add quotation marks so we can add some text in here,
+
+44
+00:04:40,000 --> 00:04:46,000
+otherwise it's going to interpret this as a command rather than some contents.
+
+45
+00:04:46,000 --> 00:04:50,000
+So we add those quotation marks, this is what's called a string.
+
+46
+00:04:50,000 --> 00:04:56,000
+So you can see our syntax kind of is being hinted here where we're telling it alert, we're going to give it a
+
+47
+00:04:56,000 --> 00:05:03,000
+message, and the format that message is going to be in is a string, which you can see right here.
+
+48
+00:05:03,000 --> 00:05:08,000
+So we're going to type in our message. And we're going to tell it Hello World, which is kind of
+
+49
+00:05:08,000 --> 00:05:16,000
+that stereotypical first message that we always write when we're learning a new language, so we can go ahead and
+
+50
+00:05:16,000 --> 00:05:21,000
+follow that stereotype. I almost feel like it's a rule when you're starting a new language and we can go
+
+51
+00:05:21,000 --> 00:05:28,000
+ahead and do that as well. So alert, Hello World in our quotation marks, and then we need to finish this by
+
+52
+00:05:28,000 --> 00:05:33,000
+adding a semicolon. So I'm going to add that semicolon and that's going to tell the browser that this is a
+
+53
+00:05:33,000 --> 00:05:39,000
+statement or a complete command. That's called a statement in JavaScript.
+
+54
+00:05:39,000 --> 00:05:47,000
+The last thing we need to do is run our code so it's going to run this JavaScript in our HTML file over here on the left.
+
+55
+00:05:47,000 --> 00:05:53,000
+So I'm going to come up here and run this, and very, very cool we have this pop-up window right here telling us
+
+56
+00:05:53,000 --> 00:06:00,000
+the message we alerted, Hello World. So we can press OK. And how cool is it that we can already have some
+
+57
+00:06:00,000 --> 00:06:08,000
+kind of functionality or interactivity on our page? But luckily we aren't limited to just alert, we have other
+
+58
+00:06:08,000 --> 00:06:16,000
+commands we can tell the browser as well. So right below this I'm going to use another command here called confirm,
+
+59
+00:06:16,000 --> 00:06:23,000
+so that's just confirm. And then in parentheses we have the same syntax here for this command, we're going
+
+60
+00:06:23,000 --> 00:06:29,000
+to enter another string or another little bit of text in between here.
+
+61
+00:06:29,000 --> 00:06:38,000
+So I'm going to type in those quotation marks and confirm that say, I love JavaScript, if I can type here,
+
+62
+00:06:38,000 --> 00:06:44,000
+with an exclamation point. And the last thing we need is that semicolon and then we can press Run.
+
+63
+00:06:44,000 --> 00:06:51,000
+So we have our alert saying, Hello World, we can say OK. We have this confirm, which is almost identical
+
+64
+00:06:51,000 --> 00:06:55,000
+to our alert except for we have the ability to press Cancel as well.
+
+65
+00:06:55,000 --> 00:07:01,000
+So I'm going to press OK and then there we go. So from there you can see that our program is running from
+
+66
+00:07:01,000 --> 00:07:11,000
+top to bottom, it's just going to start, and then read our statements or our commands as we type them in our file here.
+
+67
+00:07:11,000 --> 00:07:16,000
+If we come in here and add a new one, I'm going to press Enter, and we can use another one called prompt,
+
+68
+00:07:16,000 --> 00:07:21,000
+which is pretty similar to these two except for it gives us the ability to type in some text.
+
+69
+00:07:21,000 --> 00:07:31,000
+So, I'm going to add those quotation marks to enter our string here or our text, and let's say Do you want to
+
+70
+00:07:31,000 --> 00:07:35,000
+learn JavaScript, and then I'm going to add our question mark.
+
+71
+00:07:35,000 --> 00:07:41,000
+We need to add our semicolon there at the end. Very, very important we don't forget that semicolon.
+
+72
+00:07:41,000 --> 00:07:44,000
+And after I press Run, we're going to see our alert. I'll press OK.
+
+73
+00:07:44,000 --> 00:07:50,000
+We have our confirm, which is next say, I love JavaScript, OK. And then we have our prompt asking us,
+
+74
+00:07:50,000 --> 00:07:57,000
+Do you want to learn JavaScript? So we can press Cancel and run away or we can press OK and continue.
+
+75
+00:07:57,000 --> 00:08:01,000
+So I'll say Yes with a whole bunch of exclamation points because we're super excited.
+
+76
+00:08:01,000 --> 00:08:11,000
+And then there we go we have our first program. One question you might have is the spacing we have between our commands.
+
+77
+00:08:11,000 --> 00:08:15,000
+So, the space between each of these statements is going to be ignored.
+
+78
+00:08:15,000 --> 00:08:22,000
+So if we wanted this all to be on one line without any space, if we run this we're going to get the exact same
+
+79
+00:08:22,000 --> 00:08:30,000
+thing here. You can see that nothing at all is different other than it's formatted a little bit differently
+
+80
+00:08:30,000 --> 00:08:36,000
+in our file. So the main important thing here is that it's readable for you, it's scannable.
+
+81
+00:08:36,000 --> 00:08:40,000
+So it's best to start each new statement on a new line like this.
+
+82
+00:08:40,000 --> 00:08:44,000
+You can even press Enter to add a space between each of these.
+
+83
+00:08:44,000 --> 00:08:51,000
+It's going to run exactly the same. The important thing is if you add a space between this, if you have many
+
+84
+00:08:51,000 --> 00:08:58,000
+lines of code, you want to not leave that space between each line because it actually adds to that file size,
+
+85
+00:08:58,000 --> 00:09:03,000
+which we don't want, we don't want our code to run more slowly, which in a program that's only a couple of
+
+86
+00:09:03,000 --> 00:09:10,000
+lines long like this one it doesn't have that big of an impact, but once we start to have larger file sizes
+
+87
+00:09:10,000 --> 00:09:14,000
+that's going to have a huge impact, but other than that it's up to you.
+
+88
+00:09:14,000 --> 00:09:22,000
+It's going to ignore that space between those commands. So now that we know how to setup our JavaScript Scratchpad
+
+89
+00:09:22,000 --> 00:09:29,000
+and we've also learned a couple of commands for our browser, in our next lesson we're going to learn about
+
+90
+00:09:29,000 --> 00:59:00,000
+operators and how we can use JavaScript with logic.
+

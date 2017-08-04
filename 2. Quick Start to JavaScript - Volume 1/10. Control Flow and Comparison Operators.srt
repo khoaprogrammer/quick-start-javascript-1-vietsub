@@ -1,0 +1,296 @@
+1
+00:00:03,000 --> 00:00:11,000
+In this lesson we will learn how to have more control over our conditions by using comparison operators.
+
+2
+00:00:11,000 --> 00:00:14,000
+In our last lesson we ended in an exercise
+
+3
+00:00:14,000 --> 00:00:24,000
+to calculate to see whether a number is divisible by 3 or 5 and alert a different word under each condition.
+
+4
+00:00:24,000 --> 00:00:32,000
+Otherwise, it would just print our number out to our console, but one issue with our code so far is if our number
+
+5
+00:00:32,000 --> 00:00:39,000
+is 0, which is not divisible by 3 or 5, it's still going to alert fizz or buzz.
+
+6
+00:00:39,000 --> 00:00:47,000
+So just to kind of test this out I'm going to comment out our randomNumber here and this brings up another
+
+7
+00:00:47,000 --> 00:00:53,000
+good point. We can comment out a single line of code, so it's not run, by using two forward slashes.
+
+8
+00:00:53,000 --> 00:01:00,000
+So we can press two forward slashes and then you can see our code is turning gray and that it's no longer running.
+
+9
+00:01:00,000 --> 00:01:10,000
+So I want to say var randomNumber and set it equal to 0 so we can test our code under this condition and see
+
+10
+00:01:10,000 --> 00:01:14,000
+what's going to happen. So if we run this you can see we get fizz.
+
+11
+00:01:14,000 --> 00:01:20,000
+So from this we can see we're not having exactly the right thing happening.
+
+12
+00:01:20,000 --> 00:01:27,000
+So I'm going to go ahead comment out our 0 and bring back in our randomNumber variable.
+
+13
+00:01:27,000 --> 00:01:34,000
+So how can we fix our code so 0 isn't going to alert fizz or buzz?
+
+14
+00:01:34,000 --> 00:01:41,000
+Well we can use what's called comparison operators to check for additional conditions in our code.
+
+15
+00:01:41,000 --> 00:01:50,000
+So we want to check for an additional condition. Let's start with our first condition if it's divisible by 3,
+
+16
+00:01:50,000 --> 00:01:56,000
+and we say if it's divisible by 3 and another condition has been met.
+
+17
+00:01:56,000 --> 00:02:00,000
+And the way that we can do that in JavaScript is by using two ampersands.
+
+18
+00:02:00,000 --> 00:02:07,000
+So we can say if randomNumber is divisible by 3 and this other condition.
+
+19
+00:02:07,000 --> 00:02:13,000
+So what we want to check for here is that our number is not equal to 0.
+
+20
+00:02:13,000 --> 00:02:20,000
+So we haven't learned how to do this yet. So we have an operator, a special operator, that checks whether something
+
+21
+00:02:20,000 --> 00:02:30,000
+is not equal to something else. So we want to target our variable, so we want to say randomNumber is not equal to,
+
+22
+00:02:30,000 --> 00:02:35,000
+and the way we do that is with an exclamation point and an equal.
+
+23
+00:02:35,000 --> 00:02:43,000
+So we want to say it's not equal to 0. So this is kind of confusing at first, but we really have to start to
+
+24
+00:02:43,000 --> 00:02:51,000
+retrain our brain how we're thinking and to read things how it's going to evaluate in our code.
+
+25
+00:02:51,000 --> 00:02:58,000
+So just to go over this once again, we're going to say if our randomNumber is divisible by 3 and our randomNumber
+
+26
+00:02:58,000 --> 00:03:04,000
+is not 0, then we're going to alert fizz. So we want to do the same thing for our second condition.
+
+27
+00:03:04,000 --> 00:03:15,000
+So we also want to say, and if our randomNumber is not equal to 0, then we can alert buzz.
+
+28
+00:03:15,000 --> 00:03:19,000
+So only if both of these conditions are met then will we do this.
+
+29
+00:03:19,000 --> 00:03:24,000
+So let's go ahead and test this with 0 again to see if we fixed this issue.
+
+30
+00:03:24,000 --> 00:03:32,000
+So, let's run this and you can see now we're just getting 0 echoed out to our console, it's no longer alerting
+
+31
+00:03:32,000 --> 00:03:40,000
+fizz or buzz, so awesome. We've fulfilled that condition that if our randomNumber is 0 it's not going to return
+
+32
+00:03:40,000 --> 00:03:48,000
+any of these answers. So I'm going to comment this back out again and we have an additional condition now that
+
+33
+00:03:48,000 --> 00:03:53,000
+we want to meet. We are kind of building in the complexity of our program here.
+
+34
+00:03:53,000 --> 00:03:59,000
+So we're going to say if a number is divisible by 3 and 5 alert fizzbuzz.
+
+35
+00:03:59,000 --> 00:04:06,000
+So we're going to add an additional condition here. So right under this we're going to say, else if,
+
+36
+00:04:06,000 --> 00:04:18,000
+and then our additional condition. So we want to check and see if our randomNumber is divisible by 3 and it's
+
+37
+00:04:18,000 --> 00:04:29,000
+also divisible by 5. So we want to see if our randomNumber is also divisible by 5.
+
+38
+00:04:29,000 --> 00:04:38,000
+And then we're going to alert something different, we're going to say fizzbuzz, so fizzbuzz.
+
+39
+00:04:38,000 --> 00:04:44,000
+Then we just need our semicolon, but in our current program we're never going to get fizzbuzz because our range is
+
+40
+00:04:44,000 --> 00:04:52,000
+only between 0 and 5. So now we're going to choose a random number between 0 and 15, that way we have a possibility
+
+41
+00:04:52,000 --> 00:05:00,000
+of this condition being met. So we're going to multiply this by 15 instead of 5.
+
+42
+00:05:00,000 --> 00:05:11,000
+So, let's go ahead and run this. So we get fizz, we get buzz, fizz, and we can continue to run this or we can
+
+43
+00:05:11,000 --> 00:05:17,000
+just set our randomNumber to 15 to see if we're going to get fizzbuzz and our code is going to work.
+
+44
+00:05:17,000 --> 00:05:26,000
+So I'm going to comment this back out and then we'll set our randomNumber to equal 15 and we should get fizzbuzz.
+
+45
+00:05:26,000 --> 00:05:33,000
+So let's go ahead and run this. And we can see we get fizz. And so we're getting the exact same problem
+
+46
+00:05:33,000 --> 00:05:42,000
+where we were getting 0 in that we first need to make sure that condition isn't met in our first if statement
+
+47
+00:05:42,000 --> 00:05:46,000
+here because otherwise we're never going to get our last statement.
+
+48
+00:05:46,000 --> 00:05:53,000
+So clearly we need to evaluate this a little bit differently in our code.
+
+49
+00:05:53,000 --> 00:05:59,000
+So, right below here, well let's go ahead and keep what we have so far, but start thinking about how we can
+
+50
+00:05:59,000 --> 00:06:09,000
+improve this so we don't get that result. So, we're going to start again with our randomNumber and see if it's
+
+51
+00:06:09,000 --> 00:06:26,000
+divisible by 3, so if it's divisible by 3, and it's not 0. So if it's not equal to 0 then we're going to have
+
+52
+00:06:26,000 --> 00:06:34,000
+some conditions. So just from the start we want to also check if it's divisible by 3 and if it's also divisible
+
+53
+00:06:34,000 --> 00:06:42,000
+by 5 so we can get fizzbuzz. So what we can do here is we can add an additional if statement inside of another
+
+54
+00:06:42,000 --> 00:06:53,000
+if statement. So let's take a look at what this looks like. We can say if our randomNumber is also divisible
+
+55
+00:06:53,000 --> 00:07:09,000
+by 5, then we'll alert our fizzbuzz, otherwise, we're going to alert just fizz.
+
+56
+00:07:09,000 --> 00:07:18,000
+So otherwise else just alert fizz because it's not divisible by both.
+
+57
+00:07:18,000 --> 00:07:25,000
+So this is going to be kind of confusing at first, but we can really start to slowly build up the complexity
+
+58
+00:07:25,000 --> 00:07:32,000
+of our code by testing it under a certain condition and really making sure it's doing exactly what we want it to.
+
+59
+00:07:32,000 --> 00:07:37,000
+So we have our first condition, so let's go ahead and add our second condition.
+
+60
+00:07:37,000 --> 00:07:48,000
+So we want to say, else if our randomNumber is divisible by 5, and then we still want to check if it's not 0,
+
+61
+00:07:48,000 --> 00:08:08,000
+so and our randomNumber is not equal to 0 we want to alert buzz, otherwise, we want to just log our number to
+
+62
+00:08:08,000 --> 00:08:14,000
+the console. So we can say console.log and then our random number.
+
+63
+00:08:14,000 --> 00:08:22,000
+So now let's go ahead and test this. We're going to go ahead and delete our original code and evaluate it and
+
+64
+00:08:22,000 --> 00:08:32,000
+see if 15 will now return fizzbuzz instead of fizz. So let's go ahead and run this, and you can see we get fizzbuzz.
+
+65
+00:08:32,000 --> 00:08:39,000
+So, this is awesome. You can see that even though it took us awhile to get to this kind of end result and to
+
+66
+00:08:39,000 --> 00:08:47,000
+get to something that works just by slowly coming in here and testing this under certain conditions,
+
+67
+00:08:47,000 --> 00:08:54,000
+we can make sure that we are getting the results we intend and we're not accidentally letting things kind of
+
+68
+00:08:54,000 --> 00:09:02,000
+slide through like we were before. So we have to be creative and build on the complexity using the smaller
+
+69
+00:09:02,000 --> 00:09:09,000
+parts that we know. I know this isn't a very exciting example, this isn't very fun to do something,
+
+70
+00:09:09,000 --> 00:09:16,000
+an exercise like fizzbuzz, but it really can help us retrain our brain to think in a way that we can
+
+71
+00:09:16,000 --> 00:09:24,000
+translate our thoughts into code. So, now that we've learned about control flow and how we can use and,
+
+72
+00:09:24,000 --> 00:09:33,000
+and not equals, and also use if/else statements inside of another if statement to improve what we're checking for,
+
+73
+00:09:33,000 --> 00:09:39,000
+in our next lesson we're going to be putting it all together and doing something a little bit more fun
+
+74
+00:09:39,000 --> 00:59:00,000
+by creating a zombie text adventure game.
+

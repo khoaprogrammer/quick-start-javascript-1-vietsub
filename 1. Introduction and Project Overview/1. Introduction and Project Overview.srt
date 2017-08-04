@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:07,000
+Hi. I'm Susan with Digital-Tutors, and this is Quick Start to JavaScript, Volume 1.
+
+2
+00:00:07,000 --> 00:00:11,000
+In this course, we'll start learning how to write JavaScript from scratch.
+
+3
+00:00:11,000 --> 00:00:16,000
+This course assumes no prior experience with JavaScript so we'll start by talking about what we can create
+
+4
+00:00:16,000 --> 00:00:23,000
+with it and also learn the syntax by doing things like creating alerts, doing basic math, and learn some of
+
+5
+00:00:23,000 --> 00:00:30,000
+the basic building blocks of JavaScript like strings, numbers, Booleans, variables, and if else statements.
+
+6
+00:00:30,000 --> 00:00:35,000
+We'll finish up by creating a zombie text adventure game to apply everything we've learned.
+
+7
+00:00:35,000 --> 00:59:00,000
+So, let's get started in our next lesson by learning what JavaScript does.
+

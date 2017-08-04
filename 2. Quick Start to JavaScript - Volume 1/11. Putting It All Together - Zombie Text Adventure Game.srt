@@ -1,0 +1,268 @@
+1
+00:00:03,000 --> 00:00:12,000
+In this lesson we'll put everything we've learned so far together to create a simple zombie text adventure game
+
+2
+00:00:12,000 --> 00:00:13,000
+Up until this point, we've learned
+
+3
+00:00:13,000 --> 00:00:19,000
+a lot of things so far and we've definitely learned enough to do something fun like create a little text
+
+4
+00:00:19,000 --> 00:00:25,000
+adventure game to help us practice thinking in a new way, because just like I mentioned before, we really are
+
+5
+00:00:25,000 --> 00:00:32,000
+training our brain to think in a new way. So I want to create a little text adventure game called Zombie
+
+6
+00:00:32,000 --> 00:00:38,000
+Apocalypse where we chose a weapon to fight the zombie with and we have a 50/50 chance of either defeating
+
+7
+00:00:38,000 --> 00:00:45,000
+the zombie or getting bitten and losing the game. So, just like we did with our fizzbuzz game we can start
+
+8
+00:00:45,000 --> 00:00:50,000
+to break this down into parts to make it easier to write our code.
+
+9
+00:00:50,000 --> 00:00:55,000
+It's really easy to try to do everything at once and then get really overwhelmed.
+
+10
+00:00:55,000 --> 00:01:02,000
+So, the first thing we want to do with our game is we want to kind of set the scenario or set the scene.
+
+11
+00:01:02,000 --> 00:01:10,000
+So, I'm going to use alert to alert on the page what kind of scenario we're encountering here.
+
+12
+00:01:10,000 --> 00:01:17,000
+So I'm going to say alert, and then we're going to enter a string into our alert, and just to save you the
+
+13
+00:01:17,000 --> 00:01:23,000
+time of watching me type this out I kind have written a little example scenario.
+
+14
+00:01:23,000 --> 00:01:29,000
+So you can feel free to create your own or you can type in what I've created here.
+
+15
+00:01:29,000 --> 00:01:35,000
+So I'm going to say, oops and it cut off my it, It is the zombie apocalypse.
+
+16
+00:01:35,000 --> 00:01:42,000
+You are looting a store and suddenly a zombie bursts through the door, which I'm going to go ahead and shrink
+
+17
+00:01:42,000 --> 00:01:46,000
+this window a little bit so we can see more of our Scratchpad here.
+
+18
+00:01:46,000 --> 00:01:52,000
+So we have our zombie apocalypse, we're looting a store. So let's go ahead and run our code so far.
+
+19
+00:01:52,000 --> 00:01:58,000
+So we get a little message and we've done a good job so far of kind of setting the tone.
+
+20
+00:01:58,000 --> 00:02:08,000
+So we can say OK. And next we want to ask our user to choose a weapon.
+
+21
+00:02:08,000 --> 00:02:16,000
+So we want to store our weapon choice as a variable so our code can remember what our choice was and we can
+
+22
+00:02:16,000 --> 00:02:27,000
+refer to it throughout our code. So we can say, var weapon, and then we want to store the results of our response.
+
+23
+00:02:27,000 --> 00:02:33,000
+So we can use our prompt and then we can insert a little bit more here.
+
+24
+00:02:33,000 --> 00:02:37,000
+We could just ask what our weapon was, but we want to kind of build on our scenario.
+
+25
+00:02:37,000 --> 00:02:43,000
+So I wrote something else out here. So, I'm going to copy it and then paste it so you don't have to watch me
+
+26
+00:02:43,000 --> 00:02:47,000
+type all of this. You could say, You search around frantically for a weapon.
+
+27
+00:02:47,000 --> 00:02:52,000
+What do you choose? And we have a couple of different choices here, we can choose a bow and arrow, an axe,
+
+28
+00:02:52,000 --> 00:03:00,000
+or a rubber chicken. So we want to add our semicolon. And let's go ahead and run this so we can see what
+
+29
+00:03:00,000 --> 00:03:06,000
+we have so far. So we have our beginning scenario. We have a zombie bursting through the door and we have to
+
+30
+00:03:06,000 --> 00:03:16,000
+search around frantically for a weapon. So we can make our choice, maybe we want to choose rubber chicken,
+
+31
+00:03:16,000 --> 00:03:21,000
+and then OK. So now we need to do something with our weapon choice.
+
+32
+00:03:21,000 --> 00:03:28,000
+So I would like to start by maybe inserting or telling the user what they chose.
+
+33
+00:03:28,000 --> 00:03:42,000
+So, then we can say, alert You attack the zombie with your, and then we want to add a space here by adding
+
+34
+00:03:42,000 --> 00:03:50,000
+a string with just a space in it, and then we can just use our variable to repeat whatever our user typed in.
+
+35
+00:03:50,000 --> 00:03:54,000
+So we're going to say You attacked the zombie with your weapon.
+
+36
+00:03:54,000 --> 00:04:00,000
+So let's go ahead and test this. We say it's a zombie apocalypse, and let's say axe this time.
+
+37
+00:04:00,000 --> 00:04:05,000
+So we can say, You attacked the zombie with your axe. So we already have a really good start.
+
+38
+00:04:05,000 --> 00:04:12,000
+We have our scenario, we're asking the user to choose a weapon, and then we're alerting our response.
+
+39
+00:04:12,000 --> 00:04:19,000
+So now what we want to do is we want to have a 50/50 chance of either defeating the zombie or getting bitten.
+
+40
+00:04:19,000 --> 00:04:27,000
+So I'm going to press Enter. And I like to keep my variables all in the same spot, that's a good practice.
+
+41
+00:04:27,000 --> 00:04:34,000
+So what we want to do is we want to create a randomNumber once again, so we have our fun math functions coming
+
+42
+00:04:34,000 --> 00:04:45,000
+back in. So let's say var randomNumber, and then we want to have a 50/50 chance so if we use our randomNumber
+
+43
+00:04:45,000 --> 00:04:53,000
+here and we use the rounding to round that randomNumber, then we're either going to get a 0 or a 1.
+
+44
+00:04:53,000 --> 00:05:02,000
+So we have a 50/50 chance of getting either 0 or a 1. So we want to say, Math.round, so we're going to round
+
+45
+00:05:02,000 --> 00:05:11,000
+the result of our randomNumber. So round our randomNumber. And then we don't want to multiply this by
+
+46
+00:05:11,000 --> 00:05:20,000
+anything cause either 0 or 1 is fine. So, now we're going to have our scenario.
+
+47
+00:05:20,000 --> 00:05:26,000
+We're going to be asked for our choice. It's going to attack our zombie with our choice.
+
+48
+00:05:26,000 --> 00:05:30,000
+And we also have this randomNumber, but we're not doing anything with it.
+
+49
+00:05:30,000 --> 00:05:33,000
+So this is a perfect opportunity to use our if else statement.
+
+50
+00:05:33,000 --> 00:05:47,000
+So we want to check and see if our randomNumber is equal to 0, and then we could have one thing happen or we
+
+51
+00:05:47,000 --> 00:06:03,000
+could say, else if our random number is equal to 1 then we want something else to happen instead.
+
+52
+00:06:03,000 --> 00:06:10,000
+And we can leave off that else statement and our code is going to run just fine, we just won't have something
+
+53
+00:06:10,000 --> 00:06:16,000
+if we happen to get a 2 or a 3 nothing would happen instead. So we can do something a little bit different
+
+54
+00:06:16,000 --> 00:06:25,000
+here with our else if statement. So if our number is 0 I want us to get bitten and lose.
+
+55
+00:06:25,000 --> 00:06:39,000
+So if our number is 0, we're going to alert The zombie bites you. You lose!!!.
+
+56
+00:06:39,000 --> 00:06:51,000
+And then our semicolon. Otherwise, if we get a 1 we can say, alert, then we can say You kill the zombie with
+
+57
+00:06:51,000 --> 00:06:57,000
+your, and then we can just reuse our weapon again. So we can say plus and then our space, woops,
+
+58
+00:06:57,000 --> 00:07:09,000
+make sure you use a plus and not our equals sign, and then with our weapon, and then we could say,
+
+59
+00:07:09,000 --> 00:07:15,000
+You win!, and then our semicolon. And let's go ahead and test our little game.
+
+60
+00:07:15,000 --> 00:07:22,000
+So I'm going to go ahead and run this. We get our scenario. And we have, oh no, a zombie bursting through the door.
+
+61
+00:07:22,000 --> 00:07:30,000
+We can choose our weapon, so let's say rubber chicken. So we attack the zombie with our rubber chicken and then
+
+62
+00:07:30,000 --> 00:07:39,000
+we kill the zombie and we win. So we can go ahead and play again and let's see if we can get bitten.
+
+63
+00:07:39,000 --> 00:07:44,000
+And we win again, but you can see here that we can start to do some really fun things.
+
+64
+00:07:44,000 --> 00:07:50,000
+We aren't just limited to doing kind of boring exercises like fizzbuzz.
+
+65
+00:07:50,000 --> 00:07:56,000
+By slowly breaking this down we can start to build things and increase our complexity.
+
+66
+00:07:56,000 --> 00:08:03,000
+So in our next lesson I want to go over your volume 1 assignment and learn how we can use everything we've
+
+67
+00:08:03,000 --> 00:59:00,000
+learned so far to create an adventure game of your own.
+

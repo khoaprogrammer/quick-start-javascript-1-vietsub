@@ -1,0 +1,300 @@
+1
+00:00:03,000 --> 00:00:08,000
+In this lesson we'll learn about operators or how to use JavaScript to do calculations.
+
+2
+00:00:08,000 --> 00:00:13,000
+Before we get started in the browser we need to open up our project file for this lesson.
+
+3
+00:00:13,000 --> 00:00:15,000
+So in our project files
+
+4
+00:00:15,000 --> 00:00:21,000
+you'll just want to make sure in your 04_begin folder that you double-click to open up index.html and
+
+5
+00:00:21,000 --> 00:00:24,000
+Firefox web browser. From there,
+
+6
+00:00:24,000 --> 00:00:31,000
+we just want to pull up our JavaScript Scratchpad so we can write this and see it directly in the browser window.
+
+7
+00:00:31,000 --> 00:00:36,000
+So once again you'll right-click and click Inspect Element to pull up your developer tools and then click on this
+
+8
+00:00:36,000 --> 00:00:45,000
+little spiral notebook icon to pull open our Scratchpad. If you think back to our last lesson, we learned how
+
+9
+00:00:45,000 --> 00:00:48,000
+to use commands to start to communicate with the browser window.
+
+10
+00:00:48,000 --> 00:00:57,000
+We typed things like alert and then we just needed to put some text or some characters inside of quotation marks,
+
+11
+00:00:57,000 --> 00:01:03,000
+which is once again called a string, in order to display the results in the browser.
+
+12
+00:01:03,000 --> 00:01:09,000
+So we can say Hello, we just need to add our semicolon, and then once we run this you can see we see that
+
+13
+00:01:09,000 --> 00:01:15,000
+result popping up in a pop-up window and it says Hello, and we can press OK.
+
+14
+00:01:15,000 --> 00:01:21,000
+But we aren't just limited to commands like this. One of the most important parts of using JavaScript to create
+
+15
+00:01:21,000 --> 00:01:32,000
+programs is learning how to use operators to perform calculations for us, so this allows us to use JavaScript with logic.
+
+16
+00:01:32,000 --> 00:01:36,000
+One of the most common types of logic is math, so that's always a good starting point.
+
+17
+00:01:36,000 --> 00:01:42,000
+Even though it's not very exciting, we can get a lot more practice and kind of learn more, get a better feel
+
+18
+00:01:42,000 --> 00:01:50,000
+for JavaScript, by performing those kinds of calculations. So I'm going to go ahead and delete our alert here.
+
+19
+00:01:50,000 --> 00:01:55,000
+And one of the most common types of math or arithmetic is addition.
+
+20
+00:01:55,000 --> 00:02:03,000
+So if we say just how we would think of it, 2 + 2, all we need to do is just add a semicolon at the end and
+
+21
+00:02:03,000 --> 00:02:12,000
+JavaScript is going to evaluate this expression for us, or it's going to perform this calculation and return a result.
+
+22
+00:02:12,000 --> 00:02:18,000
+But if we press Run like we did with our alert, you can see we have nothing happening and this is
+
+23
+00:02:18,000 --> 00:02:26,000
+because we're not telling it to do anything, rather we're kind of performing a calculation here or we're writing
+
+24
+00:02:26,000 --> 00:02:34,000
+a statement, we're just saying 2 + 2. So, it's not going to have any kind of effect over here, but it is in
+
+25
+00:02:34,000 --> 00:02:40,000
+fact returning a result kind of behind the scene. So in order to see that rather than pressing Run,
+
+26
+00:02:40,000 --> 00:02:47,000
+we want to click up here and say Display. And what this does, you can read right here, it's going to insert
+
+27
+00:02:47,000 --> 00:02:54,000
+the results in a comment so we can see what kind of value JavaScript is returning behind the scene.
+
+28
+00:02:54,000 --> 00:03:00,000
+So I'm going to go ahead and press Display and you can see it's going to say the equivalent of this statement
+
+29
+00:03:00,000 --> 00:03:11,000
+here is going to be 4, so 2 + 2 is equal to 4. And in addition to addition, we also can perform subtraction.
+
+30
+00:03:11,000 --> 00:03:18,000
+So if we want to say 2 - 2, we can just add our semicolon, and then we can press Display, and we can see that
+
+31
+00:03:18,000 --> 00:03:28,000
+2 - 2 is equal to 0. If we were stuck with simple calculations like this it might be pretty tough to see how
+
+32
+00:03:28,000 --> 00:03:33,000
+helpful this is since we can just do this in our head, but once we start to get really hard calculations,
+
+33
+00:03:33,000 --> 00:03:40,000
+that's when we can start to use JavaScript to do this heavy lifting for us so we don't have to think nearly as hard.
+
+34
+00:03:40,000 --> 00:03:49,000
+So if we had kind of two crazy numbers here and we wanted to add these together, we could just type this in,
+
+35
+00:03:49,000 --> 00:03:58,000
+and then it will return the results here for us. So, in addition to this, in addition to addition,
+
+36
+00:03:58,000 --> 00:04:05,000
+we have subtraction, we can perform complex calculations, we can also do things like multiplication and
+
+37
+00:04:05,000 --> 00:04:12,000
+division as well. So the syntax for this or the symbol we use you might already be familiar with because it's
+
+38
+00:04:12,000 --> 00:04:19,000
+not completely unique to JavaScript. JavaScript uses a kind of common syntax for this.
+
+39
+00:04:19,000 --> 00:04:30,000
+So if we wanted to say, what is 2 times 2 we can use an asterisk, so 2 * 2, display the results, and we can see 4.
+
+40
+00:04:30,000 --> 00:04:40,000
+So if you think back or you might already can be able to guess what we can do to divide one value by another.
+
+41
+00:04:40,000 --> 00:04:45,000
+So if we want to say what is 2 divided by 2 we use a forward slash just like that.
+
+42
+00:04:45,000 --> 00:04:57,000
+So if I press Display we get the result 2/2 is equal to 1. And these are pretty simple arithmetic operators,
+
+43
+00:04:57,000 --> 00:05:04,000
+but we also have kind of funny ones as well such as this thing called a modulo.
+
+44
+00:05:04,000 --> 00:05:11,000
+So just to show you that would be 10 and we could use the % sign and then 3.
+
+45
+00:05:11,000 --> 00:05:18,000
+So, what does this mean? It's pretty difficult, there's not really a way you can guess what this means,
+
+46
+00:05:18,000 --> 00:05:27,000
+but what this is doing is it's taking the first number, dividing it by the second, and returning the remainder of
+
+47
+00:05:27,000 --> 00:05:33,000
+those two numbers. So if I press Display, we get 1. So how the heck did we get 1?
+
+48
+00:05:33,000 --> 00:05:42,000
+Well, if we take 3 we can see how many times 3 will go into 10 as a whole number.
+
+49
+00:05:42,000 --> 00:05:51,000
+So 3 x 3 returns 9, we can't fit 3 in another time so the whole number that's left over is 1.
+
+50
+00:05:51,000 --> 00:05:57,000
+So 3 x 3 is 9 plus 1 equals 10, so that returns the remainder.
+
+51
+00:05:57,000 --> 00:06:05,000
+And in fact this modulo is incredibly helpful in JavaScript as we'll see later on in this course.
+
+52
+00:06:05,000 --> 00:06:13,000
+It can start to do some really interesting things for us even though at its face value it's kind of odd seeming.
+
+53
+00:06:13,000 --> 00:06:20,000
+It doesn't seem like it might be super helpful. Another thing we need to kind of remember or think back to
+
+54
+00:06:20,000 --> 00:06:25,000
+when we're using operators like this is the order of operations.
+
+55
+00:06:25,000 --> 00:06:31,000
+If you took math in high school or earlier on this might come back to you or this might sound familiar,
+
+56
+00:06:31,000 --> 00:06:38,000
+and the order of operations helps us determine when we have multiple operators like this, which calculation is
+
+57
+00:06:38,000 --> 00:06:50,000
+going to be performed first. So if we have something like 30 - 2 * 3, if you take a second and kind of think
+
+58
+00:06:50,000 --> 00:06:58,000
+about this and think about what result it might return. So I'm just going to take a second here and then I'll
+
+59
+00:06:58,000 --> 00:07:05,000
+press Display and you can see 24. So if we perform this from left to right, just like we're used to,
+
+60
+00:07:05,000 --> 00:07:12,000
+we would get 30 - 2, which equals 28 * 3, which it's clearly not 24.
+
+61
+00:07:12,000 --> 00:07:18,000
+So if you don't remember what the order of operations is, it has an order of precedence in which these are going
+
+62
+00:07:18,000 --> 00:07:25,000
+to be calculated, and multiplication and division are always going to be performed first.
+
+63
+00:07:25,000 --> 00:07:38,000
+So we get 2 * 3, which is 6, and then it's going to subtract the result of that 6 from 30, so 30 - 6 is equal to 24.
+
+64
+00:07:38,000 --> 00:07:46,000
+If we want to have this first part performed first, we can just use parentheses to tell JavaScript what we
+
+65
+00:07:46,000 --> 00:07:52,000
+want to happen first, which is just like in traditional arithmetic or traditional math.
+
+66
+00:07:52,000 --> 00:08:02,000
+So if we put in parentheses (30 - 2) and then add our * 3 outside here, we should get 28 * 3.
+
+67
+00:08:02,000 --> 00:08:08,000
+So if we press Display, you can see that's exactly what we get, which is 84.
+
+68
+00:08:08,000 --> 00:08:16,000
+So we need to kind of be understanding of this and be able to anticipate the results, because if we weren't
+
+69
+00:08:16,000 --> 00:08:25,000
+familiar with order of operations you can see we would expect this to return a completely different result than it did.
+
+70
+00:08:25,000 --> 00:08:31,000
+And while math doesn't seem incredibly helpful on its own, we're just getting values here, but what can this
+
+71
+00:08:31,000 --> 00:08:38,000
+actually do for us? It starts to be incredibly important and helpful once we combine this with other kinds of
+
+72
+00:08:38,000 --> 00:08:46,000
+things we can do with JavaScript. And we aren't just stuck with returning the values here, it can also be
+
+73
+00:08:46,000 --> 00:08:51,000
+incredibly helpful to return these values somewhere else as well.
+
+74
+00:08:51,000 --> 00:08:55,000
+So, that's what we're going to talk about in our last lesson when we talk about the console
+
+75
+00:08:55,000 --> 00:59:00,000
+and what that is.
+

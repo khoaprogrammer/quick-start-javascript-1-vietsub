@@ -1,0 +1,312 @@
+1
+00:00:01,000 --> 00:00:09,000
+In this lesson we'll learn a little bit about the historical context of JavaScript and also take a look at
+
+2
+00:00:09,000 --> 00:00:17,000
+the things we can create using JavaScript as a language. Before we start learning how to use JavaScript,
+
+3
+00:00:17,000 --> 00:00:24,000
+it's important to take a look at what it is and the kinds of things we can create using JavaScript.
+
+4
+00:00:24,000 --> 00:00:25,000
+So, one of the most
+
+5
+00:00:25,000 --> 00:00:30,000
+confusing things about JavaScript when people are talking about it or learning about it is it sounds
+
+6
+00:00:30,000 --> 00:00:39,000
+very similar to another language called Java. And it actually has nothing to do with Java as a language,
+
+7
+00:00:39,000 --> 00:00:44,000
+although it pulled some inspiration from the structure of the language.
+
+8
+00:00:44,000 --> 00:00:50,000
+They actually have nothing to do with each other. It was named JavaScript more as a marketing ploy due to
+
+9
+00:00:50,000 --> 00:00:59,000
+the popularity of Java as a language at the time JavaScript was created, so we kind of get that confusion in
+
+10
+00:00:59,000 --> 00:01:07,000
+that the names are so similar because of that. JavaScript was created in 1995 by Netscape as a language that
+
+11
+00:01:07,000 --> 00:01:14,000
+was native to the browser, so using it for a language to create products and applications that run directly
+
+12
+00:01:14,000 --> 00:01:21,000
+in the browser to replace other languages that had been appropriated to do the same thing, but didn't run as
+
+13
+00:01:21,000 --> 00:01:29,000
+well because they needed plugins, and things of that nature, such as Java was used prior to JavaScript in the
+
+14
+00:01:29,000 --> 00:01:37,000
+browser to create what is called Java applets or little bits of applications that ran in the browser,
+
+15
+00:01:37,000 --> 00:01:45,000
+but they were slower and it also need a plugin to be able to run that language since that wasn't what it was
+
+16
+00:01:45,000 --> 00:01:52,000
+designed for originally. So JavaScript was created to kind of replace that and be that language that was
+
+17
+00:01:52,000 --> 00:01:59,000
+meant specifically to be used on the web. And JavaScript is primarily client side, meaning it doesn't need
+
+18
+00:01:59,000 --> 00:02:07,000
+to run through a server in order for it to work. Compare that to something like PHP or .NET that needed to
+
+19
+00:02:07,000 --> 00:02:17,000
+run through a server in order for those to be able to work with a website, JavaScript just needs a browser in order to run.
+
+20
+00:02:17,000 --> 00:02:22,000
+While it was originally designed as scripting language, it's actually a fully featured language.
+
+21
+00:02:22,000 --> 00:02:28,000
+If you don't know what a scripting language is, it's basically when a language is used to communicate with an
+
+22
+00:02:28,000 --> 00:02:34,000
+existing application. An example of this would be using JavaScript as a scripting language in a game engine
+
+23
+00:02:34,000 --> 00:02:44,000
+like Unity 3D versus using it as a fully featured language to develop something like an application from
+
+24
+00:02:44,000 --> 00:02:47,000
+the ground up. So what are some things
+
+25
+00:02:47,000 --> 00:02:54,000
+we can actually create with JavaScript? Well, we can create something as simple as interactions or small
+
+26
+00:02:54,000 --> 00:02:59,000
+enhancements like infinite scrolling. If you don't know what infinite scrolling is, if you've ever used
+
+27
+00:02:59,000 --> 00:03:07,000
+something like Pinterest where you scroll down and it dynamically loads content depending on how far you are
+
+28
+00:03:07,000 --> 00:03:15,000
+down the page, it's continually loading content when you reach the bottom, that's infinite scrolling.
+
+29
+00:03:15,000 --> 00:03:20,000
+Beyond infinite scrolling and little small enhancements like that, we can create things like parallax
+
+30
+00:03:20,000 --> 00:03:27,000
+effects in the browser, we can create entire games that run in the browser without a plugin, we can do 2D,
+
+31
+00:03:27,000 --> 00:03:34,000
+we can do 3D games, and also JavaScript is starting to be used more and more outside of the browser,
+
+32
+00:03:34,000 --> 00:03:40,000
+which is really interesting. This term has been coined for that called the Internet of Things, and that refers
+
+33
+00:03:40,000 --> 00:03:48,000
+to languages like JavaScript being used in contexts other than what they were originally designed for,
+
+34
+00:03:48,000 --> 00:03:54,000
+things like communicating with robots, creating wearable technology, and things like that, so it's really,
+
+35
+00:03:54,000 --> 00:03:59,000
+really cool. We can do a whole lot of different things using JavaScript.
+
+36
+00:03:59,000 --> 00:04:03,000
+It's also been used to create entire applications from the ground up.
+
+37
+00:04:03,000 --> 00:04:11,000
+An example of this is a YouTube application for PlayStation, it was built with a JavaScript library called AngularJS.
+
+38
+00:04:11,000 --> 00:04:18,000
+So let's take a look at some specific examples of things that were created with JavaScript.
+
+39
+00:04:18,000 --> 00:04:24,000
+So this is another JavaScript library called parallax.js, which allows you to create parallax effects.
+
+40
+00:04:24,000 --> 00:04:27,000
+I'll just X out this little menu over here so we can take a look at this.
+
+41
+00:04:27,000 --> 00:04:34,000
+You can see that as I'm moving we get that kind of parallax effect and I'm using my mouse almost as the camera to kind
+
+42
+00:04:34,000 --> 00:04:42,000
+of manipulate and change the viewport. So, to see what JavaScript's actual role in this web page is,
+
+43
+00:04:42,000 --> 00:04:47,000
+let's take a look at the code that's running this behind the scenes.
+
+44
+00:04:47,000 --> 00:04:53,000
+So I'm going to right-click and pull up the developer tools here by pressing Inspect Element.
+
+45
+00:04:53,000 --> 00:05:00,000
+I'm using Firefox, so we're using Firefox's developer tools, and I'm going to start by disabling JavaScript.
+
+46
+00:05:00,000 --> 00:05:07,000
+So right here we see the default behavior of our page, and then if I come here into the Settings I can come
+
+47
+00:05:07,000 --> 00:05:12,000
+down here and disable JavaScript and we're going to see a change, so I'm going to click that.
+
+48
+00:05:12,000 --> 00:05:19,000
+And, now you can see we don't have JavaScript working so you can see that kind of inner activity that was adding here
+
+49
+00:05:19,000 --> 00:05:25,000
+to our page. We still have some basic animations and movement coming in, but this is actually being done
+
+50
+00:05:25,000 --> 00:05:32,000
+with CSS. If we come in here and disable our CSS, I'm just going to press these little eyes, which is going
+
+51
+00:05:32,000 --> 00:05:40,000
+to turn that off, we can see just the HTML on our page. We can see we have images, we have basic content here,
+
+52
+00:05:40,000 --> 00:05:47,000
+but we have no styles and just a very basic inner activity such as the ability to click on links.
+
+53
+00:05:47,000 --> 00:05:53,000
+So this is what HTML does is it gives the structure to our page.
+
+54
+00:05:53,000 --> 00:06:03,000
+When we come in here and add CSS back in, we have the presentational aspects of that page being styled with CSS.
+
+55
+00:06:03,000 --> 00:06:10,000
+So this kind of sets the look and feel and we can start to do more and more as CSS advances, such as basic animations.
+
+56
+00:06:10,000 --> 00:06:17,000
+When we come back in and bring JavaScript back in, we can do a whole lot of different things, very cool things
+
+57
+00:06:17,000 --> 00:06:25,000
+such as interacting with our web page. So here you can kind of see the separation of those three languages,
+
+58
+00:06:25,000 --> 00:06:30,000
+or technologies, and see how they each have their own role within the web page.
+
+59
+00:06:30,000 --> 00:06:33,000
+So let's take a look at a couple other examples that were
+
+60
+00:06:33,000 --> 00:06:38,000
+created with JavaScript. We have this demo here, Samsung Racer,
+
+61
+00:06:38,000 --> 00:06:47,000
+which is an example of 3D in the browser. This was created using a library called Three.js, which allows you to
+
+62
+00:06:47,000 --> 00:06:54,000
+create 3D like this here directly in the browser without using a plugin or anything like that, which is really,
+
+63
+00:06:54,000 --> 00:06:56,000
+really cool.
+
+64
+00:06:56,000 --> 00:07:04,000
+Another example that was also built with Three.js is this little guy right here, this is more of a CAD type
+
+65
+00:07:04,000 --> 00:07:10,000
+example where someone has created a mockup of an apartment, but we can use our mouse to kind of look around
+
+66
+00:07:10,000 --> 00:07:18,000
+and control the camera, and in addition to that we can actually use our keys here and move around and take a look as well.
+
+67
+00:07:18,000 --> 00:07:23,000
+So you can see a more practical application of 3D in the browser.
+
+68
+00:07:23,000 --> 00:07:30,000
+You can send this to your client and they could actually walk around your mockup and get a much better feel
+
+69
+00:07:30,000 --> 00:07:38,000
+for what you're creating or what you're designing for them, which is also very, very cool.
+
+70
+00:07:38,000 --> 00:07:46,000
+Another example is with a motion controller. This is called Leap Motion, which is a motion controller that's
+
+71
+00:07:46,000 --> 00:07:54,000
+controlled using your hands. You can see he's using his hand in this demo here to manipulate or control the
+
+72
+00:07:54,000 --> 00:08:02,000
+scene, kind of move the camera, and in just a second here he is going to start to use his hands to actually
+
+73
+00:08:02,000 --> 00:08:08,000
+interact further with this and pull off pieces of the skull. You can use JavaScript to create all of these
+
+74
+00:08:08,000 --> 00:08:14,000
+kinds of interactions. So, there are a lot of different things even beyond the browser that we are able to
+
+75
+00:08:14,000 --> 00:08:22,000
+do with JavaScript. So, now that we've learned a little bit about the historical context of JavaScript and what it
+
+76
+00:08:22,000 --> 00:08:28,000
+does and also taken a look at some examples of what we can create using JavaScript, in our next lesson we're
+
+77
+00:08:28,000 --> 00:08:29,000
+going to actually get started
+
+78
+00:08:29,000 --> 00:59:00,000
+and write some JavaScript of our own.
+

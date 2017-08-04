@@ -1,0 +1,208 @@
+1
+00:00:03,000 --> 00:00:12,000
+In this lesson we'll be introduced to control flow or how to make our code run only under certain conditions.
+
+2
+00:00:12,000 --> 00:00:15,000
+Up until this point all of our code has run just from
+
+3
+00:00:15,000 --> 00:00:22,000
+top to bottom and it would always run no matter what, but if this was the case we'd be pretty limited in what
+
+4
+00:00:22,000 --> 00:00:29,000
+we could do. Fortunately there's a way we can make our code only run if certain conditions are met.
+
+5
+00:00:29,000 --> 00:00:36,000
+So, we can use what's called an if/else statement to run our code if a certain condition is first met.
+
+6
+00:00:36,000 --> 00:00:46,000
+So let's take a look at this. Let's say we want to ask a question and print out a response that tells the user
+
+7
+00:00:46,000 --> 00:00:53,000
+if they're right or wrong. So we can first create a variable to store our answer.
+
+8
+00:00:53,000 --> 00:00:59,000
+So let's say we have a variable. We declare it with our variable keyword once again, var.
+
+9
+00:00:59,000 --> 00:01:06,000
+We need to give it a name so let's just call it answer since we're going to be saving an answer, gathering a response.
+
+10
+00:01:06,000 --> 00:01:13,000
+And then we'll store a prompt. So we'll store the response to our question.
+
+11
+00:01:13,000 --> 00:01:19,000
+So let's say our prompt command, and then we need to ask our question in the form of a string.
+
+12
+00:01:19,000 --> 00:01:27,000
+So let's say we ask what the capital of New York City is or New York and we want to gauge and see if they are right.
+
+13
+00:01:27,000 --> 00:01:32,000
+If they answer it correctly we'll give them one response, if not we'll give them another response.
+
+14
+00:01:32,000 --> 00:01:44,000
+So let's say What is the capital of New York? And then the if/else statement we first need to say if,
+
+15
+00:01:44,000 --> 00:01:52,000
+and then we add some parentheses, opening and closing parentheses, and we need to put our condition inside of those parentheses.
+
+16
+00:01:52,000 --> 00:02:03,000
+So if this condition is met we'll do something else. So if our answer, and then we need to ask if it's equal to the
+
+17
+00:02:03,000 --> 00:02:10,000
+correct answer. So up until this point we have been using a single equal sign and in JavaScript this has a special
+
+18
+00:02:10,000 --> 00:02:20,000
+meaning in that it assigns a value to a variable or it sets something equal to something else instead of asking
+
+19
+00:02:20,000 --> 00:02:26,000
+if something is equal to something else, which is a traditional use of an equal sign that we're used to using
+
+20
+00:02:26,000 --> 00:02:35,000
+as we do math and things like that. So we have to ask if something is equal to something else in a different way.
+
+21
+00:02:35,000 --> 00:02:43,000
+And the way we do that is with three equal signs. So instead of one, we just use three.
+
+22
+00:02:43,000 --> 00:02:51,000
+So we're going to be asking if our answer is equal to, and then we'll put in our capital.
+
+23
+00:02:51,000 --> 00:02:58,000
+So we have Albany, which is the capital of New York. And then to run the code only if this condition is met
+
+24
+00:02:58,000 --> 00:03:07,000
+we need some curly brackets here. So we open them right after our condition and then we close them right here.
+
+25
+00:03:07,000 --> 00:03:16,000
+And then we're going to put everything inside of here that we want to happen if our answer is equal to Albany.
+
+26
+00:03:16,000 --> 00:03:23,000
+So we want to say if it is correct we want to alert the user that they're correct.
+
+27
+00:03:23,000 --> 00:03:32,000
+So we want to alert You are correct, and then to run our statement here we need our semicolon.
+
+28
+00:03:32,000 --> 00:03:38,000
+And then we need to provide an alternative in case our condition is not met.
+
+29
+00:03:38,000 --> 00:03:44,000
+So we have if the answer is Albany we'll tell them they're correct, and we can use the else keyword,
+
+30
+00:03:44,000 --> 00:03:52,000
+so we'll say else do something different. So we have if and then our condition and then whatever we want to
+
+31
+00:03:52,000 --> 00:03:59,000
+happen inside of our first set of curly brackets, then we have our else, and if you find it easier to read
+
+32
+00:03:59,000 --> 00:04:05,000
+this we can also just press Enter to bring this onto a new line, else do something different.
+
+33
+00:04:05,000 --> 00:04:16,000
+So we can say otherwise, let's say Sorry, and then maybe we want it to show them the response
+
+34
+00:04:16,000 --> 00:04:29,000
+again, sorry + we need our space, and then our answer, another space, and then the rest of our message,
+
+35
+00:04:29,000 --> 00:04:38,000
+Sorry that is not correct. And then we need our semicolon. So let's take a look.
+
+36
+00:04:38,000 --> 00:04:44,000
+I know this syntax is different than what we've been using so far, but let's take a look and see what this does.
+
+37
+00:04:44,000 --> 00:04:49,000
+So we're going to run this. It's going to ask us what the capital of New York is.
+
+38
+00:04:49,000 --> 00:04:55,000
+So we can say, maybe we guess, and we're like oh, New York City.
+
+39
+00:04:55,000 --> 00:05:00,000
+And we press OK. And it says, Sorry, New York City is not correct.
+
+40
+00:05:00,000 --> 00:05:06,000
+So, how cool is this? We now have our code responding to a scenario.
+
+41
+00:05:06,000 --> 00:05:14,000
+We've built a little quiz here and now we have customized response depending on what answer we type in.
+
+42
+00:05:14,000 --> 00:05:18,000
+I think this is just so cool. So let's go ahead and run this again.
+
+43
+00:05:18,000 --> 00:05:23,000
+We have what is the capital of New York? And let's say we get our answer right this time, we say it's Albany.
+
+44
+00:05:23,000 --> 00:05:29,000
+And then we have our response saying, You are correct. And maybe we want to add an exclamation point in here so
+
+45
+00:05:29,000 --> 00:05:33,000
+it's a little bit more excited about the fact that we got it right.
+
+46
+00:05:33,000 --> 00:05:40,000
+So we can press OK. So you can see here that we can have multiple things happening.
+
+47
+00:05:40,000 --> 00:05:49,000
+We can start to have a customized response or code that only runs if something else happens first.
+
+48
+00:05:49,000 --> 00:05:55,000
+So we're no longer just running things from top to bottom no matter what happens.
+
+49
+00:05:55,000 --> 00:06:00,000
+Now we can only execute certain code if something else happens first.
+
+50
+00:06:00,000 --> 00:06:06,000
+So this is where our code starts to be incredibly powerful and things start to get really fun.
+
+51
+00:06:06,000 --> 00:06:14,000
+So, in our next lesson I want to continue using if/else statements and learn how to check and see if
+
+52
+00:06:14,000 --> 00:59:00,000
+multiple conditions have been met.
+

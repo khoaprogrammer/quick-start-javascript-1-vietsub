@@ -1,0 +1,480 @@
+1
+00:00:03,000 --> 00:00:10,000
+In this lesson we will learn how to use if/else statements to check for multiple conditions.
+
+2
+00:00:10,000 --> 00:00:13,000
+In our last lesson we learned how to use
+
+3
+00:00:13,000 --> 00:00:21,000
+if/else statements to do something called control flow or to have code run only in certain situations.
+
+4
+00:00:21,000 --> 00:00:28,000
+So let's continue practicing using our if/else statements and build onto our quiz we have here.
+
+5
+00:00:28,000 --> 00:00:36,000
+So, so far we have a question, it asks us what the capital of New York is, and we get a different response depending
+
+6
+00:00:36,000 --> 00:00:44,000
+if different conditions have been met. So if our answer is Albany we are told that it's correct; otherwise,
+
+7
+00:00:44,000 --> 00:00:51,000
+we're told our answer is not correct. But what if we want to check for multiple scenarios?
+
+8
+00:00:51,000 --> 00:00:58,000
+Well we can see use and if/else statement, but we have to modify the syntax to be just a little bit different.
+
+9
+00:00:58,000 --> 00:01:06,000
+So let's add another answer to our quiz. So let's ask if, maybe what our favorite animal is, something that
+
+10
+00:01:06,000 --> 00:01:19,000
+has more than one possible correct answer. So let's say var favoriteAnimal, and then we want to ask a
+
+11
+00:01:19,000 --> 00:01:31,000
+question with our prompt command and let's say, What is your favorite animal?
+
+12
+00:01:31,000 --> 00:01:36,000
+And then we need our semicolon. And then we can start our if/else statement.
+
+13
+00:01:36,000 --> 00:01:44,000
+So our first condition we want to ask if and then put our condition in parentheses, so let's say if our
+
+14
+00:01:44,000 --> 00:01:52,000
+favoriteAnimal is equal to, and remember we use triple equals to check to see if something is equal to
+
+15
+00:01:52,000 --> 00:02:02,000
+something else, so let's say if our favoriteAnimal is equal to cat, we can alert a message like maybe Cats
+
+16
+00:02:02,000 --> 00:02:10,000
+are awesome!, add our semicolon. And what if we want to check for a second condition or a second favorite
+
+17
+00:02:10,000 --> 00:02:17,000
+animal and print out a response based on that condition and if that condition has been met?
+
+18
+00:02:17,000 --> 00:02:24,000
+Well, rather than using else and rather than adding another if, we can use a combination of the two so it
+
+19
+00:02:24,000 --> 00:02:33,000
+will check if this is met, and then we need to use something called else/if to check for another condition.
+
+20
+00:02:33,000 --> 00:02:39,000
+So we can press Enter to come onto a new line or we can continue on that line as well, whatever is easiest
+
+21
+00:02:39,000 --> 00:02:47,000
+for you to read. So we could say, else if, which is two words, we can add our additional condition,
+
+22
+00:02:47,000 --> 00:02:57,000
+so we could say else if favoriteAnimal is equal to maybe something like dog, or not dig, but dog if I can
+
+23
+00:02:57,000 --> 00:03:01,000
+type correctly, and then we need our curly brackets to check for our second condition.
+
+24
+00:03:01,000 --> 00:03:12,000
+So maybe we want to alert Dogs are okay. We could add our semicolon.
+
+25
+00:03:12,000 --> 00:03:18,000
+So we have our first condition, we have our second condition, and then we can either continue checking for
+
+26
+00:03:18,000 --> 00:03:25,000
+multiple conditions using else/if or we can just do our else statement.
+
+27
+00:03:25,000 --> 00:03:31,000
+So we'll say, else, and then we need curly brackets, we don't have parentheses here because we're not checking
+
+28
+00:03:31,000 --> 00:03:41,000
+for a condition we're just saying otherwise do this. So maybe otherwise alert good choice.
+
+29
+00:03:41,000 --> 00:03:47,000
+And then add our semicolon. Maybe we want to capitalize our sentence here so it's correctly formatted.
+
+30
+00:03:47,000 --> 00:03:50,000
+And now let's go ahead and run this and see what happens here.
+
+31
+00:03:50,000 --> 00:03:57,000
+So we have our first question. We can insert our answer. And then it'll ask us our favorite animal.
+
+32
+00:03:57,000 --> 00:04:05,000
+And maybe we want to say dog. And then it will check for multiple conditions.
+
+33
+00:04:05,000 --> 00:04:12,000
+It'll check for this one, then go to our else/if condition, and then otherwise we'll get our else.
+
+34
+00:04:12,000 --> 00:04:19,000
+So this is really, really cool. We can check for multiple things and we aren't just limited to one or the other.
+
+35
+00:04:19,000 --> 00:04:27,000
+So this gives us even more flexibility with our syntax or our formatting here for our control flow.
+
+36
+00:04:27,000 --> 00:04:35,000
+So, I'm going to go ahead and delete this and let's take a look and I want to try a common coding question
+
+37
+00:04:35,000 --> 00:04:40,000
+that's asked in interviews and it's designed to filter out candidates.
+
+38
+00:04:40,000 --> 00:04:46,000
+So if we can do this then it means we're doing a good job. So we're not going to use the exact question that's
+
+39
+00:04:46,000 --> 00:04:52,000
+asked in interviews, we're going to use a modified version, and it's a little game called FizzBuzz.
+
+40
+00:04:52,000 --> 00:04:59,000
+So, I have the console pulled up here and I'm going to clear it so we have all of our information cleared out and
+
+41
+00:04:59,000 --> 00:05:04,000
+we're starting fresh. And if you don't remember how to get to the console we just want to right-click,
+
+42
+00:05:04,000 --> 00:05:10,000
+bring you our developer tools, and then my screen is small so we can't read it, but we want this Console tab,
+
+43
+00:05:10,000 --> 00:05:17,000
+which we get that little reflow message every time we resize the window so that's what that means once again.
+
+44
+00:05:17,000 --> 00:05:25,000
+So we're going to press Clear. And the way we do an exercise like this is rather than trying to do everything
+
+45
+00:05:25,000 --> 00:05:32,000
+at once we can make it much easier by trying to start with the smallest part, and once we can do that successfully
+
+46
+00:05:32,000 --> 00:05:39,000
+then we can continue to build on it. It's much simpler, it makes it much easier on ourselves to think about
+
+47
+00:05:39,000 --> 00:05:45,000
+things one thing at a time. So let's start by trying to generate a random number.
+
+48
+00:05:45,000 --> 00:05:52,000
+Our goal here is we want to generate a random number between 0 and 5, if our result is divisible by 3 we're
+
+49
+00:05:52,000 --> 00:05:57,000
+going to alert one thing, if it's divisible by 5 we'll alert something else.
+
+50
+00:05:57,000 --> 00:06:01,000
+Otherwise, we'll just print the number to the console using console.log.
+
+51
+00:06:01,000 --> 00:06:08,000
+So, we're going to start by creating our random number. So we want to store our random number in a variable
+
+52
+00:06:08,000 --> 00:06:17,000
+so our code can remember that random number. So we want to say, var randomNumber.
+
+53
+00:06:17,000 --> 00:06:24,000
+And if you remember a couple of lessons back we used some math commands to generate a random number.
+
+54
+00:06:24,000 --> 00:06:33,000
+So that was with a capital M, then Math.random, and then parentheses because we're going to tell it to generate
+
+55
+00:06:33,000 --> 00:06:37,000
+that random number and insert the result. We'll add our semicolon.
+
+56
+00:06:37,000 --> 00:06:44,000
+And let's go ahead and also log what we're doing here to the console so we can see how we need to adapt this to
+
+57
+00:06:44,000 --> 00:06:53,000
+fit our problem here. So we're going to console.log that random number to see what's being generated,
+
+58
+00:06:53,000 --> 00:07:00,000
+so random number, add our semicolon. I'm going to go ahead and run this.
+
+59
+00:07:00,000 --> 00:07:07,000
+And you can see we're getting a number, a random number. We get a new random number every time we run our code,
+
+60
+00:07:07,000 --> 00:07:15,000
+but it's a decimal. And if your remember back from our math questions earlier we also learned that Math.random
+
+61
+00:07:15,000 --> 00:07:25,000
+generates a random decimal between 0 and 1. So, we don't want a decimal we want a random number between 0 and 5.
+
+62
+00:07:25,000 --> 00:07:31,000
+And we're going to be checking for whole numbers so it doesn't make sense to have decimals either.
+
+63
+00:07:31,000 --> 00:07:38,000
+So we want to start by rounding this number to a whole number, and it turns out there's another command for that.
+
+64
+00:07:38,000 --> 00:07:47,000
+We can use Math.round to round our numbers. So instead of Math.random let's test that out, it's just Math.round
+
+65
+00:07:47,000 --> 00:07:53,000
+with a capital M for that Math. And it's going to round whatever we put in parentheses.
+
+66
+00:07:53,000 --> 00:07:57,000
+So just to test this out let's test this out with a decimal that we choose.
+
+67
+00:07:57,000 --> 00:08:06,000
+So we say round .5, and if we run this, you can see it's rounding up so we get 1.
+
+68
+00:08:06,000 --> 00:08:12,000
+If we had something different here, maybe we have .3, if we run this you can see it's going to round down to 0.
+
+69
+00:08:12,000 --> 00:08:18,000
+So this is going to round this to a whole number so now we're getting a whole number, but we still need it to be
+
+70
+00:08:18,000 --> 00:08:26,000
+a random whole number. So rather than rounding whatever value we insert in there we can still use that random
+
+71
+00:08:26,000 --> 00:08:34,000
+number command to generate a random number. So inside of our parentheses instead of that static value we're
+
+72
+00:08:34,000 --> 00:08:43,000
+going to say, Math.random, and then we need the parentheses for that one as well.
+
+73
+00:08:43,000 --> 00:08:47,000
+So I'm going to add some space here so we can read this a little bit better.
+
+74
+00:08:47,000 --> 00:08:53,000
+So what we're doing here is we're generating a random number, which we saw generated a decimal.
+
+75
+00:08:53,000 --> 00:09:01,000
+So it's going to execute or run the code inside first, it's going to say generate that random number,
+
+76
+00:09:01,000 --> 00:09:07,000
+and then we're going to round whatever that random number is. So let's take a look at this.
+
+77
+00:09:07,000 --> 00:09:12,000
+You can see we're getting 0 and we're getting 0 a lot of times.
+
+78
+00:09:12,000 --> 00:09:17,000
+You can see this scary looking red number here. It just means we're getting the same results multiple times.
+
+79
+00:09:17,000 --> 00:09:25,000
+So, we're getting 0 five times and we got a 1. So let's take a look, we get 1 again, 1 again, and then 0.
+
+80
+00:09:25,000 --> 00:09:32,000
+So now we're consistently getting whole numbers between 0 and 1, or they're either a 0 or 1.
+
+81
+00:09:32,000 --> 00:09:40,000
+But our problem here says we want a random number between 1 and 5, so how can we change our variable so that we're
+
+82
+00:09:40,000 --> 00:09:48,000
+getting a range of numbers. So maybe take a second and try to think about how we might accomplish that with
+
+83
+00:09:48,000 --> 00:09:56,000
+our current code. Well, one thing we can do is we can take our original results here, our decimal,
+
+84
+00:09:56,000 --> 00:10:04,000
+and multiply it by 5. So it's going to take a decimal, it's going to multiply it by 5, and then it's going
+
+85
+00:10:04,000 --> 00:10:12,000
+to round that number. And this is going to have the effect of increasing our range from 0-1 to being 0-5.
+
+86
+00:10:12,000 --> 00:10:17,000
+So, if we multiply this by 5, let's go ahead and test this out.
+
+87
+00:10:17,000 --> 00:10:23,000
+So I'm going to run this and now we can already see we're getting 2, which is not in our original result so
+
+88
+00:10:23,000 --> 00:10:32,000
+we're definitely getting closer. And you can see we get 5, 4, 1, 5, and we can continue to test this and we
+
+89
+00:10:32,000 --> 00:10:38,000
+can see now we've met our first condition and we have a variable that's creating a random number between 0 and 5.
+
+90
+00:10:38,000 --> 00:10:45,000
+So, excellent work. So let's go ahead and continue on and see if we can do the rest of our challenge.
+
+91
+00:10:45,000 --> 00:10:53,000
+So, we want to see if the result is divisible by 3, and then if that condition has been met, we want to alert Fizz.
+
+92
+00:10:53,000 --> 00:11:04,000
+So we can use our if/else statement here. So we want to say if our randomNumber is divisible by 3,
+
+93
+00:11:04,000 --> 00:11:11,000
+then we'll do this. So let's come back to our condition here in a just a second and add what we want to happen.
+
+94
+00:11:11,000 --> 00:11:21,000
+So we want to alert fizz if it's divisible by 3. Okay, so we can come back to our condition.
+
+95
+00:11:21,000 --> 00:11:27,000
+So, we want our random number if it's only divisible by 3, we want it to alert fizz.
+
+96
+00:11:27,000 --> 00:11:34,000
+So, we can use that funny little thing we learned back a couple of lessons called modulo, which if you remember
+
+97
+00:11:34,000 --> 00:11:43,000
+was a percent sign. And what this does is it checks to see if there's a remainder after dividing a value by
+
+98
+00:11:43,000 --> 00:11:48,000
+whatever number we chose. So, we want to see if it's divisible by 3.
+
+99
+00:11:48,000 --> 00:11:57,000
+So using modulo it's going to check and see if our number is divisible by 3, but it's not quite right,
+
+100
+00:11:57,000 --> 00:12:03,000
+it's going to return a remainder, not just see if it's divisible by 3.
+
+101
+00:12:03,000 --> 00:12:10,000
+So what we want to do here is we want to use our triple equal sign to see if the remainder is equal to 0,
+
+102
+00:12:10,000 --> 00:12:18,000
+because if we divide a number by 3 and we get 0 as that remainder it means it's exactly divisible by 3 and
+
+103
+00:12:18,000 --> 00:12:25,000
+there's no whole number left over, which I know can be kind of confusing to think about at first, but if we kind
+
+104
+00:12:25,000 --> 00:12:31,000
+of break it down like this and really try to think about what's happening here we can see that this is going
+
+105
+00:12:31,000 --> 00:12:39,000
+to give us that intended result. So now if we have a number that's divisible by 3 we'll get fizz.
+
+106
+00:12:39,000 --> 00:12:44,000
+And then we want to check for an additional condition. So remember we can use else/if.
+
+107
+00:12:44,000 --> 00:12:53,000
+So I can say, else if a randomNumber, and just like with our 3 when we want to use our modulo to see if we
+
+108
+00:12:53,000 --> 00:13:00,000
+divide it by 5, if the remainder is equal to 0 then we want to alert buzz.
+
+109
+00:13:00,000 --> 00:13:10,000
+So we can say, alert buzz, and then we need our semicolon. So, let's go ahead and check this so far.
+
+110
+00:13:10,000 --> 00:13:17,000
+So, we get 5, so it's alerting buzz, 5 is divisible by 5. So we could say OK.
+
+111
+00:13:17,000 --> 00:13:25,000
+When we check it again we just get 4, 2, 2, and then now we're getting buzz.
+
+112
+00:13:25,000 --> 00:13:31,000
+So, we can say we have that working and we've met most of the condition.
+
+113
+00:13:31,000 --> 00:13:38,000
+We otherwise want to print the number to the console. So rather than logging it here we can just use our else
+
+114
+00:13:38,000 --> 00:13:44,000
+statement to only log the number if it's not divisible by 3 or 5.
+
+115
+00:13:44,000 --> 00:13:52,000
+So we want to say, else, I'm going to hit Ctrl+X to cut this, and then we'll log it to the console.
+
+116
+00:13:52,000 --> 00:14:00,000
+So, we have most of our questions, conditions being met, but if it is 0, if our number is going to be 0 here,
+
+117
+00:14:00,000 --> 00:14:08,000
+it's going to print the result and say it's divisible by 3 and it's also going to say it's divisible by 5.
+
+118
+00:14:08,000 --> 00:14:15,000
+So, technically 0 isn't divisible by 3 or 5. So in our next lesson we're going to continue learning about
+
+119
+00:14:15,000 --> 00:14:23,000
+else/if statements, control flow, and we're also going to use comparison operators to check things like
+
+120
+00:14:23,000 --> 00:59:00,000
+or and and/not.
+
